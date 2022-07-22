@@ -2,15 +2,16 @@
 <rss version="2.0">
     <channel>
         <title>你的名字</title>
-        <link>http://example.com</link>
+        <link>https://dukeshao.com</link>
         <description></description>
-        <language>zh-Hans</language>
+        <language>zh-CN</language>
         <pubDate>Wed, 13 Jul 2022 06:59:00 +0800</pubDate>
         <lastBuildDate>Wed, 13 Jul 2022 06:59:00 +0800</lastBuildDate>
+        <category>HTML</category>
         <item>
-            <guid isPermalink="true">http://example.com/2022/07/13/hell/</guid>
+            <guid isPermalink="true">https://dukeshao.com/2022/07/13/hell/</guid>
             <title>hell</title>
-            <link>http://example.com/2022/07/13/hell/</link>
+            <link>https://dukeshao.com/2022/07/13/hell/</link>
             <pubDate>Wed, 13 Jul 2022 06:59:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;hell&lt;/p&gt;
 &lt;img data-src=&#34;/2022/07/13/hell/pic.png&#34; class=&#34;&#34; title=&#34;pic&#34;&gt;
@@ -27,9 +28,10 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/07/13/A_HTML/HTML/</guid>
+            <guid isPermalink="true">https://dukeshao.com/2022/07/13/A_HTML/HTML/</guid>
             <title>HTML</title>
-            <link>http://example.com/2022/07/13/A_HTML/HTML/</link>
+            <link>https://dukeshao.com/2022/07/13/A_HTML/HTML/</link>
+            <category>HTML</category>
             <pubDate>Wed, 13 Jul 2022 06:59:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;一-html文件格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html文件格式&#34;&gt;#&lt;/a&gt; 一、HTML 文件格式&lt;/h2&gt;
 &lt;p&gt;1、文件名&lt;/p&gt;

@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>你的名字 • Posts by &#34;a_html&#34; category</title>
-        <link>https://dukeshao.com</link>
-        <description></description>
-        <language>zh-CN</language>
-        <pubDate>Wed, 13 Jul 2022 06:59:00 +0800</pubDate>
-        <lastBuildDate>Wed, 13 Jul 2022 06:59:00 +0800</lastBuildDate>
-        <category>HTML</category>
-        <item>
-            <guid isPermalink="true">https://dukeshao.com/2022/07/13/A_HTML/HTML/</guid>
-            <title>HTML</title>
-            <link>https://dukeshao.com/2022/07/13/A_HTML/HTML/</link>
-            <category>HTML</category>
-            <pubDate>Wed, 13 Jul 2022 06:59:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;一-html文件格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html文件格式&#34;&gt;#&lt;/a&gt; 一、HTML 文件格式&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dukeshao.com</id>
+    <title>你的名字 • Posts by &#34;html&#34; tag</title>
+    <link href="https://dukeshao.com" />
+    <updated>2022-07-12T22:59:00.000Z</updated>
+    <category term="HTML" />
+    <entry>
+        <id>https://dukeshao.com/2022/07/13/A_HTML/HTML/</id>
+        <title>HTML</title>
+        <link rel="alternate" href="https://dukeshao.com/2022/07/13/A_HTML/HTML/"/>
+        <content type="html">&lt;h2 id=&#34;一-html文件格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html文件格式&#34;&gt;#&lt;/a&gt; 一、HTML 文件格式&lt;/h2&gt;
 &lt;p&gt;1、文件名&lt;/p&gt;
 &lt;p&gt;xx.html&lt;/p&gt;
 &lt;p&gt;2. 文档格式&lt;/p&gt;
@@ -345,7 +340,8 @@ week第几年的第几周
 &lt;p&gt;默认情况下，页面代码中的空格跟换行在浏览器解析时，会被解析成一个空格。&lt;br&gt;
 ​	标识符： 空格    &amp;lt;小于号&amp;gt; 大于号   × 乘号&lt;br&gt;
 ​	空格大小跟字体大小并不一致，但是空格大小与字体大小有关。&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="HTML" />
+        <updated>2022-07-12T22:59:00.000Z</updated>
+    </entry>
+</feed>
