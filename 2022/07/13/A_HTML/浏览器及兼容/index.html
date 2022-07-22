@@ -22,7 +22,7 @@
 
   
 
-  <title>css | 你的名字</title>
+  <title>浏览器及兼容 | 你的名字</title>
 
   
 
@@ -96,13 +96,15 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">css</h1>
+          <h1 class="title-wrap">浏览器及兼容</h1>
           <h2 class="title-sub-wrap">
             <strong>Duke Shao</strong>
             <span>发布于</span>
             <time  class="article-date" datetime="2022-07-12T22:59:00.000Z" itemprop="datePublished">2022-07-13</time>
           </h2>
           <ul class="wrap-list dark">
+  
+    <li><a href="/categories/A-HTML/">📒 A_HTML</a></li>
   
 </ul>
           <ul class="wrap-list dark">
@@ -129,8 +131,9 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>hell</p>
-<img src="/2022/07/13/front/css/pic.png" class="" title="pic">
+        <h1 id="七-浏览器及兼容"><a href="#七-浏览器及兼容" class="headerlink" title="七    浏览器及兼容"></a>七    浏览器及兼容</h1><h3 id="一、浏览器及内核"><a href="#一、浏览器及内核" class="headerlink" title="一、浏览器及内核"></a>一、浏览器及内核</h3><p>IE, Safari, Firefox, Chrome , Opera<br>五大浏览器内核代表作品：<br>Trident: IE<br>Gecko:Mozilla Firefox<br>Webkit: Safari、Chrome<br>Presto:Opera<br>Blink:由Google和Opera Software开发的浏览器排版引擎，2013年4月发布。<br>CSS Bug:CSS样式在各浏览器中解析不一致的情况<br>CSS Hack：CSS中，Hack是指一种兼容CSS在不同浏览器中正确显示的技巧方法。有些人更喜欢使用patch(补丁)来描述这种行为。补丁<br>Filter：表示过滤器，Filter是一种用来过滤不同浏览器的Hack类型。</p>
+<h3 id="二、浏览器的兼容"><a href="#二、浏览器的兼容" class="headerlink" title="二、浏览器的兼容"></a>二、浏览器的兼容</h3><p>1.图片有边框bug<br>​    a&gt;img 在ie8及以下浏览器img都会出现边框<br>​    解决：在base.css设置img{border:0 none;}<br>2.图片间隙<br>​    盒子(例如div)&gt;img, img与盒子底部会出现大约3px的间隙<br>​    解决办法：<br>​    （1）不换行，将父元素的font-size:0；<br>​    （2）转换成块级元素img{display:block;}；<br>3.ie6双倍浮向问题<br>​    当Ie6及更低版本浏览器在解析浮动元素时，会错误地把浮向边边界（margin）加倍显示。hack:给浮动元素添加声明：display:inline;<br>4.IE6、IE7默认高度问题<br>在IE6、IE7中，部分块元素拥有默认高度（在16px左右；）<br>解决方法：<br>（1）给元素添加声明：font-size:0；<br>（2）给元素添加声明：overflow:hidden；<br>5.表单元素行高不一致的问题<br>表单元素都是行内元素，会存在基线对齐的问题<br>解决办法：<br>（1）vertical-align:middle；<br>（2）浮动<br>6.表单元素样式不一致<br>浏览器对表单元素的样式解析不一致<br>解决办法：<br>（1）将input{border:0 none;online-style:none;}；<br>（2）在表单外部套一个块级元素，设置宽高边框，设置行高。同时input的宽度为父元素的100%；<br>（3）若还出现渲染效果不一致，设置统一的盒模型{box-sizing:border-box;}；<br>7.百分比bug<br>在IE6机以下版本，若元素浮动一行显示，存在50%+50%&gt;100%的问题<br>解决办法：使用clear属性（属性值：nonr默认值、left、right、both）<br>8.鼠标指针cursor<br>cursor：hand 手型 ，IE浏览器支持<br>cursor：pointer 手型，IE6以上及高版本浏览器都支持。<br>属性值：auto默认；crosshair加号；text文本；wait等待；help帮助；progress过程；inherit继承；move移动；ne-resize向上或向右移动；pointer手形；<br>9.透明属性<br>会给整个盒子都有透明效果<br>（1）opacity取值为0-1，越大越不透明<br>（2）filter:alpha(opacity=值)<br>​    *值得取值为0-100，例如10代表上面的0.1<br>​    *IE8及以下支持<br>10.margin塌陷<br>若给父元素的第一个孩子设置margin-top，可能会被错误地渲染成父元素的margin-top。这个问题叫做margin塌陷<br>解决办法：<br>​    （1）子元素或者父元素浮动了；<br>​    （2）给父元素加overflow:hidden；<br>​    （3）给父元素加上边框；<br>​    （4）将该margin-top变为父元素的padding-top；<br>11.margin合并（层叠）<br>当两个块级元素垂直摆放时，当给第一个元素设置margin-bottom，给第二个元素设置margin-top，他们之间的margin不会叠加，而是取两者之间较大的值。</p>
+
       </section>
 
       
@@ -144,8 +147,8 @@
     
     <div class="card-text">
       
-        <a href="/2022/07/13/hell/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">hell</h2>
+        <a href="/2022/07/13/A_HTML/HTML/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">HTML</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -153,6 +156,22 @@
   </article>
 </div>
           
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="/2022/07/13/hell/cover-04.jpg-webp.jpg"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2022/07/13/B_CSS/CSS/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">CSS</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
         </nav>
       
@@ -188,13 +207,13 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>3</span>
+        <span>17</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
 </svg>
-        0
+        4
       </div>
       <div class="count-box--item">
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -207,6 +226,18 @@
 </section>
 
       
+<section class="widget-toc widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-toc" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M134.50666666 767.46666668H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.23999999v50.13333333c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H134.50666666c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.13333333c0.10666668-27.73333333 22.50666668-50.24000001 50.24000001-50.24000001zM84.37333332 541.65333333h326.18666669c27.73333333 0 50.24000001 22.39999999 50.23999999 50.13333334v50.24000001c0 27.73333333-22.50666668 50.24000001-50.24000002 50.23999999H84.37333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.23999999v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333334zM134.50666666 315.83999999H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.24000001v50.24000001c0 27.73333333-22.50666668 50.13333334-50.24000001 50.13333333H134.50666666c-27.73333333 0-50.24000001-22.39999999-50.23999999-50.13333333v-50.24000001c0.10666668-27.84000001 22.50666668-50.24000001 50.24000001-50.23999999zM209.81333332 89.91999999h326.18666671c27.73333333 0 50.24000001 22.39999999 50.23999997 50.13333335v50.23999999c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H209.81333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333333zM692.05333333 623.36l274.66666669 176.00000002c23.36000001 14.93333333 30.08 45.97333334 15.14666666 69.33333332L954.77333334 910.93333333c-14.93333333 23.25333334-45.97333334 30.08-69.33333335 15.14666667l-274.66666666-176c-23.36000001-14.93333333-30.08-45.97333334-15.14666667-69.33333333l27.09333334-42.24000001c14.93333333-23.36000001 46.08000001-30.08 69.33333333-15.14666666z" fill="currentColor"></path>
+</svg>
+    <span>TOC</span>
+  </div>
+  <div class="widget-body">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E5%86%85%E6%A0%B8"><span class="toc-number">1.</span> <span class="toc-text">一、浏览器及内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%85%BC%E5%AE%B9"><span class="toc-number">2.</span> <span class="toc-text">二、浏览器的兼容</span></a></li></ol>
+  </div>
+</section>
+
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -231,6 +262,30 @@
   </div>
   <div class="widget-body">
     <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/A-HTML/">
+            A_HTML (2)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/B-CSS/">
+            B_CSS (1)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/C-Javascript/">
+            C_Javascript (6)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/E-React/">
+            E_React (7)
+          </a>
+        </li>
       
     </ul>
   </div>
