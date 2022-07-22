@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://example.com</id>
+    <title>你的名字 • Posts by &#34;a_html&#34; category</title>
+    <link href="http://example.com" />
+    <updated>2022-07-12T22:59:00.000Z</updated>
+    <entry>
+        <id>http://example.com/2022/07/13/A_HTML/HTML/</id>
+        <title>HTML</title>
+        <link rel="alternate" href="http://example.com/2022/07/13/A_HTML/HTML/"/>
+        <content type="html">&lt;h2 id=&#34;一-html文件格式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html文件格式&#34;&gt;#&lt;/a&gt; 一、HTML 文件格式&lt;/h2&gt;
+&lt;p&gt;1、文件名&lt;/p&gt;
+&lt;p&gt;xx.html&lt;/p&gt;
+&lt;p&gt;2. 文档格式&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token doctype&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&#34;token doctype-tag&#34;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&#34;token name&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;en&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;UTF-8&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;viewport&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;width=device-width, initial-scale=1.0&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;http-equiv&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;X-UA-Compatible&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;ie=edge&lt;span class=&#34;token punctuation&#34;&gt;&#34;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Document&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;  告知文档类型为 html5&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;charset=&amp;quot;UTF-8&amp;quot;&lt;/code&gt;  字符编码为 UTF-8&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;head&amp;gt;,&amp;lt;meta&amp;gt;,&amp;lt;title&amp;gt;&lt;/code&gt;  标签默认样式 display:none&lt;/p&gt;
+&lt;h2 id=&#34;二-html的基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-html的基本语法&#34;&gt;#&lt;/a&gt; 二、html 的基本语法&lt;/h2&gt;
+&lt;p&gt;1	html 标签： 由尖括号包裹起来的一个整体&lt;/p&gt;
+&lt;p&gt;2	html 元素： 由一对双标签或者一个单标签组成&lt;/p&gt;
+&lt;p&gt;3	html 属性：[html 属性名 =“属性值”]，紧跟标签名字后面，空格隔开。一个 html 属性的多个属性值，也用空格隔开&lt;/p&gt;
+&lt;p&gt;4	html 注释：书写一些信息方便自己或他人理解，不会显示在页面中&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;!--注释--&amp;gt;&lt;/code&gt; ctrl/command+？&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;&amp;lt;!-- 注释 --&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;三-html基础标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-html基础标签&#34;&gt;#&lt;/a&gt; 三、HTML 基础标签&lt;/h2&gt;
+&lt;h4 id=&#34;1标题标签h1-h6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1标题标签h1-h6&#34;&gt;#&lt;/a&gt; 1. 标题标签 h1-h6&lt;/h4&gt;
+&lt;p&gt;标题的语义从重到轻，默认样式从大到小，建议每个页面只用一次 h1&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;display&lt;/th&gt;
+&lt;th&gt;font-weight&lt;/th&gt;
+&lt;th&gt;font-size&lt;/th&gt;
+&lt;th&gt;margin-block-start&lt;/th&gt;
+&lt;th&gt;margin-block-end&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;h1&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;2em&lt;/td&gt;
+&lt;td&gt;0.67em&lt;/td&gt;
+&lt;td&gt;0.67em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;h2&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;1.5em&lt;/td&gt;
+&lt;td&gt;0.83em&lt;/td&gt;
+&lt;td&gt;0.83em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;h3&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;1.17em&lt;/td&gt;
+&lt;td&gt;1em&lt;/td&gt;
+&lt;td&gt;1em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;h4&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;1em&lt;/td&gt;
+&lt;td&gt;1.33em&lt;/td&gt;
+&lt;td&gt;1.33em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;h5&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;0.83em&lt;/td&gt;
+&lt;td&gt;1.67em&lt;/td&gt;
+&lt;td&gt;1.67em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;h6&lt;/td&gt;
+&lt;td&gt;block&lt;/td&gt;
+&lt;td&gt;bold&lt;/td&gt;
+&lt;td&gt;0.67em&lt;/td&gt;
+&lt;td&gt;2.33em&lt;/td&gt;
+&lt;td&gt;2.33em&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Chrome、FireFox&lt;/p&gt;
+&lt;h4 id=&#34;2段落标签pp&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2段落标签pp&#34;&gt;#&lt;/a&gt; 2. 段落标签 &lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;语义：表示文本段落，一个 p 元素表示一个段落&lt;/p&gt;
+&lt;h4 id=&#34;3列表标签ul-ol&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3列表标签ul-ol&#34;&gt;#&lt;/a&gt; 3. 列表标签 &lt;code&gt;ul、ol&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;无需列表 ul（unordered list）&amp;gt;  li 列表项（list item）&lt;/li&gt;
+&lt;li&gt;有序列表 ol（ordered list）&amp;gt;  li 列表项（list item）&lt;/li&gt;
+&lt;li&gt;自定义列表 dl（definition list）&amp;gt;  dt 自定义列表项（definition term） +  dd 对自定义列表项的描述（definition description）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ul、ol 的子元素只能是 li，不可以是其他元素&lt;/p&gt;
+&lt;h4 id=&#34;4表格标签table&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4表格标签table&#34;&gt;#&lt;/a&gt; 4. 表格标签 &lt;code&gt;table&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;table &amp;gt; tr 行 &amp;gt; td 单元格&lt;/p&gt;
+&lt;p&gt;table 的 html 属性：&lt;/p&gt;
+&lt;p&gt;​	[border 给表格加上边框]&lt;/p&gt;
+&lt;p&gt;​	[cellpadding 给表格单元格加上内填充（内容与边框之间的距离）]&lt;/p&gt;
+&lt;p&gt;​	[cellspacing 单元格之间的距离]&lt;/p&gt;
+&lt;p&gt;​	[width 表格宽度]&lt;/p&gt;
+&lt;p&gt;​	[height 表格高度]&lt;/p&gt;
+&lt;p&gt;td 的 html 属性：&lt;br&gt;
+​	[colspan 合并列]&lt;br&gt;
+​	[rowspan 合并行]&lt;/p&gt;
+&lt;h4 id=&#34;5表单标签form&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5表单标签form&#34;&gt;#&lt;/a&gt; 5. 表单标签 &lt;code&gt;form&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;（1）表单的作用：收集数据，提交到服务器&lt;/p&gt;
+&lt;p&gt;​	form&lt;/p&gt;
+&lt;p&gt;​		[aciton 提交到的后台地址]&lt;/p&gt;
+&lt;p&gt;​		[method 提交方式 get/post]&lt;/p&gt;
+&lt;p&gt;（2）input 表单控件：[type 规定表单控件的类型]&lt;/p&gt;
+&lt;p&gt;​	[type]&lt;/p&gt;
+&lt;p&gt;​		text 文本框&lt;/p&gt;
+&lt;p&gt;​		password 密码框&lt;/p&gt;
+&lt;p&gt;​		radio 单选框&lt;/p&gt;
+&lt;p&gt;​		checkbox 多选框&lt;/p&gt;
+&lt;p&gt;​		button 按钮框&lt;/p&gt;
+&lt;p&gt;​		submit 提交按钮（提交功能）&lt;/p&gt;
+&lt;p&gt;​		reset 重置按钮&lt;/p&gt;
+&lt;p&gt;​	[value]&lt;/p&gt;
+&lt;p&gt;​		给表单控件添加内容&lt;/p&gt;
+&lt;p&gt;​	[name]&lt;/p&gt;
+&lt;p&gt;​		给同一组的单选框或多选框起相同的名字；&lt;/p&gt;
+&lt;p&gt;​		拥有 name 属性的表单控件内容才可以提交到服务器&lt;/p&gt;
+&lt;p&gt;​	[checked]&lt;/p&gt;
+&lt;p&gt;​		给单选框或多选框设置默认选中&lt;/p&gt;
+&lt;p&gt;（3）select &amp;gt; option 下拉列表&lt;/p&gt;
+&lt;p&gt;​	option&lt;/p&gt;
+&lt;p&gt;​		[value] 该 option 选项的值&lt;/p&gt;
+&lt;p&gt;​		[selected] 下拉列表的选项被默认选中&lt;/p&gt;
+&lt;p&gt;（4）textarea 文本域&lt;/p&gt;
+&lt;p&gt;​	[cols] 列表&lt;/p&gt;
+&lt;p&gt;​	[rows] 行数&lt;/p&gt;
+&lt;h4 id=&#34;6换行标签br&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6换行标签br&#34;&gt;#&lt;/a&gt; 6. 换行标签 &lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;7分割线标签hr&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7分割线标签hr&#34;&gt;#&lt;/a&gt; 7. 分割线标签 &lt;code&gt;&amp;lt;hr /&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;8视觉标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8视觉标签&#34;&gt;#&lt;/a&gt; 8. 视觉标签&lt;/h4&gt;
+&lt;p&gt;​	b 加粗     i 倾斜     u 下划线    s 删除线&lt;/p&gt;
+&lt;h4 id=&#34;9语义标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9语义标签&#34;&gt;#&lt;/a&gt; 9. 语义标签&lt;/h4&gt;
+&lt;p&gt;​	strong 加粗     em 倾斜    ins 下划线    del 删除线&lt;/p&gt;
+&lt;h4 id=&#34;10图片标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10图片标签&#34;&gt;#&lt;/a&gt; 10. 图片标签&lt;/h4&gt;
+&lt;p&gt;​	[src] 引入图片的路径&lt;/p&gt;
+&lt;p&gt;​		相对路径、绝对路径&lt;/p&gt;
+&lt;p&gt;​	[alt] 图片未加载出来，呈现的文字&lt;/p&gt;
+&lt;p&gt;​	[title] 光标移入图片时，呈现的文字&lt;/p&gt;
+&lt;h4 id=&#34;11没有语义的元素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11没有语义的元素&#34;&gt;#&lt;/a&gt; 11. 没有语义的元素&lt;/h4&gt;
+&lt;p&gt;div、span&lt;/p&gt;
+&lt;h4 id=&#34;12锚点标签a&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12锚点标签a&#34;&gt;#&lt;/a&gt; 12. 锚点标签 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;（1）跳转到其他页面&lt;/p&gt;
+&lt;p&gt;（2）跳转到当前页面某个部分（命名锚点）&lt;/p&gt;
+&lt;p&gt;​	给元素设置 id 名，给锚链接设置 [href=&amp;quot;#id 名&amp;quot;]，当点击锚链接，就能跳转到 id 名所在的元素&lt;/p&gt;
+&lt;p&gt;（3）跳转到其他页面某个部分（命名锚点）&lt;/p&gt;
+&lt;p&gt;​	给元素设置 id 名，给锚链接设置 [href=“路径 #id 名”]，当点击锚链接，就能跳转到 id 名所在的元素&lt;/p&gt;
+&lt;p&gt;（4）不跳转&lt;/p&gt;
+&lt;p&gt;​	如果使用了 a 标签，但是不想要 a 标签跳转&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最常见的，不会跳转，但是会刷新页面 a [href=&amp;quot;#&amp;quot;]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;onclick 事件返回 false; a [href=&amp;quot;#&amp;quot; onclick=“return false”]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用 href=&amp;quot;javascript:void (0)&amp;quot; 伪协议，不会跳转也不会刷新 a [href=“javascript:void (0)”]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四-高级表单和表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-高级表单和表格&#34;&gt;#&lt;/a&gt; 四、高级表单和表格&lt;/h2&gt;
+&lt;h4 id=&#34;一-高级表单&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-高级表单&#34;&gt;#&lt;/a&gt; 一、高级表单&lt;/h4&gt;
+&lt;p&gt;1. 表单字段集 fieldset&lt;br&gt;
+​	* 作用：对文本及表单元素进行分组&lt;br&gt;
+​	*fieldset 可以实现嵌套&lt;br&gt;
+​	*fieldset 通过 disabled 属性禁用整个分组&lt;br&gt;
+ 2. 字段集标题 legend&lt;br&gt;
+​	*legend 必须为 fieldset 的第一个子元素&lt;br&gt;
+​	*[align=“left/center/right/justify”] 设置 legend 的位置，left 为默认值&lt;br&gt;
+ 3. 提示信息标签 label&lt;br&gt;
+​	* 作用：文字与表单元素关联起来，提供提示信息&lt;br&gt;
+​	*label [for] 与表单元素的 [id] 要一致，才能与 id 名所在的元素关联&lt;br&gt;
+​	* 也可以将文字与表单元素一起包裹:label &amp;gt; 文字 + input;&lt;br&gt;
+4. 表单新类型&lt;br&gt;
+​	（1）[type=“file”] 上传文件&lt;br&gt;
+​		*[multiple] 上传多个文件&lt;br&gt;
+​	（2）[type=“image”] 图片提交按钮&lt;br&gt;
+​		*[src],[alt]&lt;/p&gt;
+&lt;h4 id=&#34;二-高级表格&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-高级表格&#34;&gt;#&lt;/a&gt; 二、高级表格&lt;/h4&gt;
+&lt;p&gt;（一）表格标签&lt;br&gt;
+ 1.caption 表格标题&lt;br&gt;
+​	* 最好作为 table 的第一个子元素&lt;br&gt;
+​	* 文本默认在水平居中&lt;br&gt;
+ 2.th 标题行的单元格&lt;br&gt;
+​		* 文本默认加粗，且文本在单元格居中&lt;br&gt;
+ 3. 行分组&lt;br&gt;
+​	*thead 表头（标题行）&amp;gt;tr&amp;gt;th&lt;br&gt;
+​	*tbody 表体（内容）&amp;gt;tr&amp;gt;td&lt;br&gt;
+​	*tfoot 表尾（总结）&amp;gt;tr&amp;gt;td&lt;br&gt;
+​	* 注意：&lt;br&gt;
+​		* 表格必须包含 thead、tbody，若存在表尾，必须包含 tfoot&lt;br&gt;
+​		* 可以有多个 tbody，但不建议&lt;br&gt;
+​		* 书写次序：thead、tfoot、tbody，可以实现在数据请求完毕之前先加载 thead、tfoot&lt;br&gt;
+4. 列分组 colgroup&lt;br&gt;
+​	*[span] 表示当前列分组占据的列数&lt;br&gt;
+（二）table 表格的 html 属性&lt;br&gt;
+​	[rules] 给表格添加分割线&lt;br&gt;
+​		*none 默认没有分割线&lt;br&gt;
+​		*cols 添加列分割线&lt;br&gt;
+​		*rows 添加行分割线&lt;br&gt;
+​		*all 添加行、列所有的分割线&lt;br&gt;
+​		*groups 添加组分割线&lt;br&gt;
+（三）表格的 CSS 属性&lt;br&gt;
+​	1.border-spacing 单元格间距&lt;br&gt;
+​		* 给 table 添加的 css 属性，等同于 cellspaing&lt;br&gt;
+​		* 不能为负数&lt;br&gt;
+​	2.border-collapse 单元格边框合并&lt;br&gt;
+​		* 属性值： separate 默认分离；collapse 合并；&lt;br&gt;
+​		* 给 table 添加的 css 属性&lt;br&gt;
+​	3.empty-cells 空单元格的边框处理&lt;br&gt;
+​		* 给 td 添加的 css 属性&lt;br&gt;
+​		* 属性值：show 默认显示 ；hide 隐藏；&lt;br&gt;
+​	4.caption-side 标题所在的位置&lt;br&gt;
+​		* 给 caption 添加的 css 属性&lt;br&gt;
+​		* 属性值：top 默认在上面 ；bottom 下面；left 左边；right 右边；&lt;/p&gt;
+&lt;h2 id=&#34;五-html5新标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-html5新标签&#34;&gt;#&lt;/a&gt; 五、HTML5 新标签&lt;/h2&gt;
+&lt;h4 id=&#34;一-html的新标签&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-html的新标签&#34;&gt;#&lt;/a&gt; 一、html 的新标签&lt;/h4&gt;
+&lt;p&gt;1.header 头部，一般都是存放引导或导航信息。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;*通常会存在至少一个标题标签或者导航条
+*header与footer不要互相嵌套
+*也可以写在其他内容里面
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.hgroup 对标题进行组合&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;header&amp;gt;hgroup&amp;gt;h3+h4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3.nav 导航条&lt;br&gt;
+ 4.main 主要内容，只用在页面最外层。建议只使用一次&lt;br&gt;
+ 5.article 文章，独立的内容块；可以嵌套元素，内部元素对外部有隶属关系。&lt;br&gt;
+6.section 区块，章节，表示专题性的内容&lt;br&gt;
+ 7.aside 侧边栏，非正文的内容。例如广告、作者信息&lt;br&gt;
+ 8.footer 底部，一般包含版权信息、作者信息之类的。&lt;br&gt;
+9.figure 对元素进行组合，一般用于文字图片、组合 ie9+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;figure&amp;gt;img+p&amp;#123;描述&amp;#125;
+figcaption对figure的内容进行描述
+figure&amp;gt;img+figcaption&amp;#123;描述&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;10.time 语义化时间，表示时间或日期 ie9+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[datetime]定义具体的时间，若time元素内没有具体时间，必须用属性设置具体时间。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;11.details 细节 [open 内容默认是否可见]&amp;gt;summary 对细节定义标题 ie/firefox/opera 不支持&lt;br&gt;
+ 12.mark 突出重点显示的内容（增加了一个背景色） ie9+&lt;br&gt;
+13.progress 进度条   ie10+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[max]最大值
+[value]当前值
+progress&amp;gt;span
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;14.meter 度量尺 ie 不支持&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[min]最小值
+[max]最大值
+[value]当前值
+[high]较高的值
+[low]较低的值
+[optimum]较佳的值，若定义比high的值大，说明越大越好；若定义比low的值小，说明越小越好 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;15.ruby 定义需要被注释或音标的整体 &amp;gt; rt 注释或音标文本&lt;br&gt;
+ 16.datalist 拥有输入功能的下拉列表 &amp;gt; option [value]   safari 不支持 ie10+&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;使用input[type=&amp;quot;text&amp;quot; list=&amp;quot;id名&amp;quot;]
+datalist[id=&amp;quot;id名&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;17.output 输出&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;form[oninput=&amp;quot;jieguo.value=num1.value&amp;quot;]&amp;gt;input[name=&amp;quot;num1&amp;quot;]+output[name=&amp;quot;jieguo&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;二-表单新增类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-表单新增类型&#34;&gt;#&lt;/a&gt; 二、表单新增类型&lt;/h4&gt;
+&lt;p&gt;1.color 拾色器&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;color&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.email 电子邮箱&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;email&amp;quot;]
+默认的验证功能
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3.number&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;number&amp;quot;]只能输入数字
+在移动端会自动弹出输入法的数字键盘
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;4.tel 电话号码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;tel&amp;quot;]移动端会弹出数字输入法
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;5.url 网址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;默认的验证功能
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;6.search 搜索&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;search&amp;quot;]配合results=&amp;quot;n&amp;quot;属性
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;7.range 范围&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;input[type=&amp;quot;range&amp;quot;]
+[min最小值],[max最大值],[value当前值],[step每次移动的步数]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;8.date, 年月日&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; month, 年月
+week第几年的第几周
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;9.time 时间（时分）&lt;br&gt;
+10.datetime-local 年月日时分&lt;/p&gt;
+&lt;h4 id=&#34;三-表单新增属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-表单新增属性&#34;&gt;#&lt;/a&gt; 三、表单新增属性&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;[placeholder] 占位符&lt;/li&gt;
+&lt;li&gt;[autofocus] 自动聚焦&lt;/li&gt;
+&lt;li&gt;[multiple] 文件上传多选&lt;/li&gt;
+&lt;li&gt;[required] 必填项&lt;/li&gt;
+&lt;li&gt;[pattern] 正则，有验证功能&lt;/li&gt;
+&lt;li&gt;[autocomplete] 下次填写时自动补全&lt;br&gt;
+​	属性值：on 自动补全，off 关闭自动补全；可以给 form,input 添加 ss&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;四-视频-音频&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-视频-音频&#34;&gt;#&lt;/a&gt; 四、视频、音频&lt;/h4&gt;
+&lt;p&gt;1.video 视频&lt;br&gt;
+ [src] 引入视频&lt;br&gt;
+支持的后缀：ogg,mp4,webM&lt;br&gt;
+ [autoplay] 自动播放&lt;br&gt;
+ [controls] 添加控件&lt;br&gt;
+ [width]&lt;br&gt;
+[height]&lt;br&gt;
+[poster] 加载等待的画面图片&lt;br&gt;
+ [loop] 循环播放&lt;br&gt;
+ 2.audio 音频 与视频用法属性一样&lt;/p&gt;
+&lt;h2 id=&#34;六-空格与回车&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#六-空格与回车&#34;&gt;#&lt;/a&gt; 六、空格与回车&lt;/h2&gt;
+&lt;p&gt;默认情况下，页面代码中的空格跟换行在浏览器解析时，会被解析成一个空格。&lt;br&gt;
+​	标识符： 空格    &amp;lt;小于号&amp;gt; 大于号   × 乘号&lt;br&gt;
+​	空格大小跟字体大小并不一致，但是空格大小与字体大小有关。&lt;/p&gt;
+</content>
+        <updated>2022-07-12T22:59:00.000Z</updated>
+    </entry>
+</feed>
