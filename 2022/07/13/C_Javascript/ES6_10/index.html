@@ -1,0 +1,874 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="你的名字" href="https://dukeshao.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="你的名字" href="https://dukeshao.com/atom.xml" />
+<link rel="alternate" type="application/json" title="你的名字" href="https://dukeshao.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://dukeshao.com/2022/07/13/C_Javascript/ES6_10/">
+
+
+
+  <title>
+ES6-10 - C_Javascript |
+你的名字 = 持续学习那些不变的底层知识</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">ES6-10
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-07-13 06:59:04">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-07-13T06:59:04+08:00">2022-07-13</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">你的名字</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://tva1.sinaimg.cn/large/9bd9b167gy1g4lhripunbj21hc0xcnnc.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/C-Javascript/" itemprop="item" rel="index" title="分类于 C_Javascript"><span itemprop="name">C_Javascript</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://dukeshao.com/2022/07/13/C_Javascript/ES6_10/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/head.png">
+    <meta itemprop="name" content="Duke Shao">
+    <meta itemprop="description" content="持续学习那些不变的底层知识, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="你的名字">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="一-es6-10新特性一览"><a class="markdownIt-Anchor" href="#一-es6-10新特性一览">#</a> 一、ES6-10 新特性一览</h2>
+<blockquote>
+<p>ES 全称 ECMAScript，ECMAScript 是 ECMA 制定的标准化脚本语言。目前 JavaScript 使用的 ECMAScript 版本为 ECMA-417。关于 ECMA 的最新资讯可以浏览 ECMA news 查看。</p>
+</blockquote>
+<p>ECMA 规范最终由 TC39 敲定。TC39 由包括浏览器厂商在内的各方组成，他们开会推动 JavaScript 提案沿着一条严格的发展道路前进。 从提案到入选 ECMA 规范主要有以下几个阶段：</p>
+<ul>
+<li>Stage 0: strawman—— 最初想法的提交。</li>
+<li>Stage 1: proposal（提案）—— 由 TC39 至少一名成员倡导的正式提案文件，该文件包括 API 事例。</li>
+<li>Stage 2: draft（草案）—— 功能规范的初始版本，该版本包含功能规范的两个实验实现。</li>
+<li>Stage 3: candidate（候选）—— 提案规范通过审查并从厂商那里收集反馈</li>
+<li>Stage 4: finished（完成）—— 提案准备加入 ECMAScript，但是到浏览器或者 Nodejs 中可能需要更长的时间。</li>
+</ul>
+<h2 id="二-es6新特性2015"><a class="markdownIt-Anchor" href="#二-es6新特性2015">#</a> 二、ES6 新特性（2015）</h2>
+<p>ES6 的特性比较多，在 ES5 发布近 6 年（2009-11 至 2015-6）之后才将其标准化。两个发布版本之间时间跨度很大，所以 ES6 中的特性比较多。 在这里列举几个常用的：</p>
+<ul>
+<li>类</li>
+<li>模块化</li>
+<li>箭头函数</li>
+<li>函数参数默认值</li>
+<li>模板字符串</li>
+<li>解构赋值</li>
+<li>延展操作符</li>
+<li>对象属性简写</li>
+<li>Promise</li>
+<li>Let 与 Const</li>
+</ul>
+<h3 id="1类class"><a class="markdownIt-Anchor" href="#1类class">#</a> 1. 类（class）</h3>
+<p>对熟悉 Java，object-c，c# 等纯面向对象语言的开发者来说，都会对 class 有一种特殊的情怀。ES6 引入了 class（类），让 JavaScript 的面向对象编程变得更加简单和易于理解。</p>
+<pre><code>  class Animal &#123;
+    constructor(name,color) &#123;      this.name = name;      this.color = color;    &#125;
+    toString() &#123;      console.log('name:' + this.name + ',color:' + this.color);
+    &#125;  &#125;
+ var animal = new Animal('dog','white'); animal.toString();
+ console.log(animal.hasOwnProperty('name'));  console.log(animal.hasOwnProperty('toString'));  console.log(animal.__proto__.hasOwnProperty('toString')); 
+ class Cat extends Animal &#123;  constructor(action) &#123;
+    // 如果没有置顶consructor,默认带super函数的constructor将会被添加、    super('cat','white');    this.action = action;  &#125;  toString() &#123;    console.log(super.toString());  &#125; &#125;
+ var cat = new Cat('catch') cat.toString();
+
+ console.log(cat instanceof Cat);  console.log(cat instanceof Animal); 
+</code></pre>
+<h3 id="2模块化module"><a class="markdownIt-Anchor" href="#2模块化module">#</a> 2. 模块化 (Module)</h3>
+<p>ES5 不支持原生的模块化，在 ES6 中模块作为重要的组成部分被添加进来。模块的功能主要由 export 和 import 组成。每一个模块都有自己单独的作用域，模块之间的相互调用关系是通过 export 来规定模块对外暴露的接口，通过 import 来引用其它模块提供的接口。同时还为模块创造了命名空间，防止函数的命名冲突。</p>
+<h4 id="导出export"><a class="markdownIt-Anchor" href="#导出export">#</a> 导出 (export)</h4>
+<p>ES6 允许在一个模块中使用 export 来导出多个变量或函数。</p>
+<p><strong>导出变量</strong></p>
+<pre><code>export var name = 'Rainbow'
+</code></pre>
+<blockquote>
+<p>心得：ES6 不仅支持变量的导出，也支持常量的导出。  <code>export const sqrt =Math.sqrt;//导出常量</code></p>
+</blockquote>
+<p>ES6 将一个文件视为一个模块，上面的模块通过 export 向外输出了一个变量。一个模块也可以同时往外面输出多个变量。</p>
+<pre><code> var name = 'Rainbow'; var age = '24'; export &#123;name, age&#125;;
+</code></pre>
+<p><strong>导出函数</strong></p>
+<pre><code>export function myModule(someArg) &#123;  return someArg;&#125;  
+</code></pre>
+<h4 id="导入import"><a class="markdownIt-Anchor" href="#导入import">#</a> 导入 (import)</h4>
+<p>定义好模块的输出以后就可以在另外一个模块通过 import 引用。</p>
+<pre><code>import &#123;myModule&#125; from 'myModule';import &#123;name,age&#125; from 'test';
+</code></pre>
+<blockquote>
+<p>心得：一条 import 语句可以同时导入默认函数和其它变量。  <code>importdefaultMethod, &#123; otherMethod &#125; from 'xxx.js';</code></p>
+</blockquote>
+<h3 id="3箭头arrow函数"><a class="markdownIt-Anchor" href="#3箭头arrow函数">#</a> 3. 箭头（Arrow）函数</h3>
+<p>这是 ES6 中最令人激动的特性之一。  <code>=&gt;</code>  不只是关键字 function 的简写，它还带来了其它好处。箭头函数与包围它的代码共享同一个  <code>this</code> , 能帮你很好的解决 this 的指向问题。有经验的 JavaScript 开发者都熟悉诸如  <code>var self = this;</code>  或  <code>var that =this</code>  这种引用外围 this 的模式。但借助  <code>=&gt;</code> ，就不需要这种模式了。</p>
+<h4 id="箭头函数的结构"><a class="markdownIt-Anchor" href="#箭头函数的结构">#</a> 箭头函数的结构</h4>
+<p>箭头函数的箭头 =&gt; 之前是一个空括号、单个的参数名、或用括号括起的多个参数名，而箭头之后可以是一个表达式（作为函数的返回值），或者是用花括号括起的函数体（需要自行通过 return 来返回值，否则返回的是 undefined）。</p>
+<pre><code>()=&gt;1v=&gt;v+1(a,b)=&gt;a+b()=&gt;&#123;    alert(&quot;foo&quot;);&#125;e=&gt;&#123;    if (e == 0)&#123;        return 0;    &#125;    return 1000/e;&#125;
+</code></pre>
+<blockquote>
+<p>心得：不论是箭头函数还是 bind，每次被执行都返回的是一个新的函数引用，因此如果你还需要函数的引用去做一些别的事情（譬如卸载监听器），那么你必须自己保存这个引用。</p>
+</blockquote>
+<h4 id="卸载监听器时的陷阱"><a class="markdownIt-Anchor" href="#卸载监听器时的陷阱">#</a> 卸载监听器时的陷阱</h4>
+<blockquote>
+<p><strong>错误的做法</strong></p>
+</blockquote>
+<pre><code>class PauseMenu extends React.Component&#123;    componentWillMount()&#123;        AppStateIOS.addEventListener('change', this.onAppPaused.bind(this));    &#125;    componentWillUnmount()&#123;        AppStateIOS.removeEventListener('change', this.onAppPaused.bind(this));    &#125;    onAppPaused(event)&#123;    &#125;&#125;
+</code></pre>
+<blockquote>
+<p><strong>正确的做法</strong></p>
+</blockquote>
+<pre><code>class PauseMenu extends React.Component&#123;    constructor(props)&#123;        super(props);        this._onAppPaused = this.onAppPaused.bind(this);    &#125;    componentWillMount()&#123;        AppStateIOS.addEventListener('change', this._onAppPaused);    &#125;    componentWillUnmount()&#123;        AppStateIOS.removeEventListener('change', this._onAppPaused);    &#125;    onAppPaused(event)&#123;    &#125;&#125;
+</code></pre>
+<p>除上述的做法外，我们还可以这样做：</p>
+<pre><code>class PauseMenu extends React.Component&#123;    componentWillMount()&#123;        AppStateIOS.addEventListener('change', this.onAppPaused);    &#125;    componentWillUnmount()&#123;        AppStateIOS.removeEventListener('change', this.onAppPaused);    &#125;    onAppPaused = (event) =&gt; &#123;
+    &#125;&#125;
+</code></pre>
+<blockquote>
+<p>需要注意的是：不论是 bind 还是箭头函数，每次被执行都返回的是一个新的函数引用，因此如果你还需要函数的引用去做一些别的事情（譬如卸载监听器），那么你必须自己保存这个引用。</p>
+</blockquote>
+<h3 id="4函数参数的默认值"><a class="markdownIt-Anchor" href="#4函数参数的默认值">#</a> 4. 函数参数的默认值</h3>
+<p>ES6 支持在定义函数的时候为其设置默认值：</p>
+<pre><code>function foo(height = 50, color = 'red')&#123;
+&#125;
+</code></pre>
+<blockquote>
+<p>不使用默认值：</p>
+</blockquote>
+<pre><code>function foo(height, color)&#123;    var height = height || 50;    var color = color || 'red';
+&#125;
+</code></pre>
+<p>这样写一般没问题，但当  <code>参数的布尔值为false</code>  时，就会有问题了。比如，我们这样调用 foo 函数：</p>
+<pre><code>foo(0, &quot;&quot;)
+</code></pre>
+<p>因为  <code>0的布尔值为false</code> ，这样 height 的取值将是 50。同理 color 的取值为‘red’。</p>
+<p>所以说，  <code>函数参数默认值</code> 不仅能是代码变得更加简洁而且能规避一些问题。</p>
+<h3 id="5模板字符串"><a class="markdownIt-Anchor" href="#5模板字符串">#</a> 5. 模板字符串</h3>
+<p>ES6 支持  <code>模板字符串</code> ，使得字符串的拼接更加的简洁、直观。</p>
+<blockquote>
+<p>不使用模板字符串：</p>
+</blockquote>
+<pre><code>var name = 'Your name is ' + first + ' ' + last + '.'
+</code></pre>
+<blockquote>
+<p>使用模板字符串：</p>
+</blockquote>
+<pre><code>var name = `Your name is $&#123;first&#125; $&#123;last&#125;.`
+</code></pre>
+<p>在 ES6 中通过  <code>$&#123;&#125;</code>  就可以完成字符串的拼接，只需要将变量放在大括号之中。</p>
+<p>解构赋值语法是 JavaScript 的一种表达式，可以方便的从数组或者对象中快速提取值赋给定义的变量。</p>
+<h4 id="获取数组中的值"><a class="markdownIt-Anchor" href="#获取数组中的值">#</a> 获取数组中的值</h4>
+<p>从数组中获取值并赋值到变量中，变量的顺序与数组中对象顺序对应。</p>
+<pre><code>var foo = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;];
+var [one, two, three] = foo;console.log(one); console.log(two); console.log(three); 
+//如果你要忽略某些值，你可以按照下面的写法获取你想要的值var [first, , , last] = foo;console.log(first); console.log(last); 
+//你也可以这样写var a, b; 
+[a, b] = [1, 2];console.log(a); console.log(b); 
+</code></pre>
+<p>如果没有从数组中的获取到值，你可以为变量设置一个默认值。</p>
+<pre><code>var a, b;
+[a=5, b=7] = [1];console.log(a); console.log(b); 
+</code></pre>
+<p>通过解构赋值可以方便的交换两个变量的值。</p>
+<pre><code>var a = 1;var b = 3;
+[a, b] = [b, a];console.log(a); console.log(b); 
+</code></pre>
+<h4 id="获取对象中的值"><a class="markdownIt-Anchor" href="#获取对象中的值">#</a> 获取对象中的值</h4>
+<pre><code>const student = &#123;  name:'Ming',  age:'18',  city:'Shanghai'  &#125;;
+const &#123;name,age,city&#125; = student;console.log(name); console.log(age); console.log(city); 
+</code></pre>
+<h3 id="7延展操作符spread-operator"><a class="markdownIt-Anchor" href="#7延展操作符spread-operator">#</a> 7. 延展操作符 (Spread operator)</h3>
+<p><code>延展操作符...</code>  可以在函数调用 / 数组构造时，将数组表达式或者 string 在语法层面展开；还可以在构造对象时，将对象表达式按 key-value 的方式展开。</p>
+<h4 id="语法"><a class="markdownIt-Anchor" href="#语法">#</a> 语法</h4>
+<blockquote>
+<p>函数调用：</p>
+</blockquote>
+<pre><code>myFunction(...iterableObj);
+</code></pre>
+<blockquote>
+<p>数组构造或字符串：</p>
+</blockquote>
+<pre><code>[...iterableObj, '4', ...'hello', 6];
+</code></pre>
+<blockquote>
+<p>构造对象时，进行克隆或者属性拷贝（ECMAScript 2018 规范新增特性）：</p>
+</blockquote>
+<pre><code>let objClone = &#123; ...obj &#125;;
+</code></pre>
+<h4 id="应用场景"><a class="markdownIt-Anchor" href="#应用场景">#</a> 应用场景</h4>
+<blockquote>
+<p>在函数调用时使用延展操作符</p>
+</blockquote>
+<pre><code>function sum(x, y, z) &#123;  return x + y + z;&#125;const numbers = [1, 2, 3];
+
+console.log(sum.apply(null, numbers));
+
+console.log(sum(...numbers));
+</code></pre>
+<blockquote>
+<p>构造数组</p>
+</blockquote>
+<p>没有展开语法的时候，只能组合使用 push，splice，concat 等方法，来将已有数组元素变成新数组的一部分。有了展开语法，构造新数组会变得更简单、更优雅：</p>
+<pre><code>const stuendts = ['Jine','Tom']; const persons = ['Tony',... stuendts,'Aaron','Anna'];conslog.log(persions)
+</code></pre>
+<p>和参数列表的展开类似， <code>...</code>  在构造字数组时，可以在任意位置多次使用。</p>
+<blockquote>
+<p>数组拷贝</p>
+</blockquote>
+<pre><code>var arr = [1, 2, 3];var arr2 = [...arr]; arr2.push(4); console.log(arr2)
+</code></pre>
+<p>展开语法和 Object.assign () 行为一致，执行的都是浅拷贝 (只遍历一层)。</p>
+<blockquote>
+<p>连接多个数组</p>
+</blockquote>
+<pre><code>var arr1 = [0, 1, 2];var arr2 = [3, 4, 5];var arr3 = [...arr1, ...arr2];//等同于var arr4 = arr1.concat(arr2);
+</code></pre>
+<h4 id="在ecmascript-2018中延展操作符增加了对对象的支持"><a class="markdownIt-Anchor" href="#在ecmascript-2018中延展操作符增加了对对象的支持">#</a> 在 ECMAScript 2018 中延展操作符增加了对对象的支持</h4>
+<pre><code>var obj1 = &#123; foo: 'bar', x: 42 &#125;;var obj2 = &#123; foo: 'baz', y: 13 &#125;;
+var clonedObj = &#123; ...obj1 &#125;;
+
+var mergedObj = &#123; ...obj1, ...obj2 &#125;;
+</code></pre>
+<p>javascript</p>
+<h4 id="在react中的应用"><a class="markdownIt-Anchor" href="#在react中的应用">#</a> 在 React 中的应用</h4>
+<p>通常我们在封装一个组件时，会对外公开一些 props 用于实现功能。大部分情况下在外部使用都应显示的传递 props 。但是当传递大量的 props 时，会非常繁琐，这时我们可以使用  <code>...(延展操作符,用于取出参数对象的所有可遍历属性)</code>  来进行传递。</p>
+<h4 id="一般情况下我们应该这样写"><a class="markdownIt-Anchor" href="#一般情况下我们应该这样写">#</a> 一般情况下我们应该这样写</h4>
+<pre><code>&lt;CustomComponent name ='Jine' age =&#123;21&#125; /&gt;
+</code></pre>
+<blockquote>
+<p>使用 … ，等同于上面的写法</p>
+</blockquote>
+<pre><code>const params = &#123;    name: 'Jine',    age: 21&#125;&lt;CustomComponent &#123;...params&#125; /&gt;
+</code></pre>
+<blockquote>
+<p>配合解构赋值避免传入一些不需要的参数</p>
+</blockquote>
+<pre><code>var params = &#123;    name: '123',    title: '456',    type: 'aaa'&#125;
+var &#123; type, ...other &#125; = params;
+&lt;CustomComponent type='normal' number=&#123;2&#125; &#123;...other&#125; /&gt;//等同于&lt;CustomComponent type='normal' number=&#123;2&#125; name='123' title='456' /&gt;
+</code></pre>
+<h3 id="8对象属性简写"><a class="markdownIt-Anchor" href="#8对象属性简写">#</a> 8. 对象属性简写</h3>
+<p>在 ES6 中允许我们在设置一个对象的属性的时候不指定属性名。</p>
+<blockquote>
+<p>不使用 ES6</p>
+</blockquote>
+<pre><code>const name='Ming',age='18',city='Shanghai';
+const student = &#123;    name:name,    age:age,    city:city&#125;;console.log(student);
+</code></pre>
+<p>对象中必须包含属性和值，显得非常冗余。</p>
+<blockquote>
+<p>使用 ES6</p>
+</blockquote>
+<pre><code>const name='Ming',age='18',city='Shanghai';
+const student = &#123;    name,    age,    city&#125;;console.log(student);
+</code></pre>
+<p>对象中直接写变量，非常简洁。</p>
+<h3 id="9promise"><a class="markdownIt-Anchor" href="#9promise">#</a> 9.Promise</h3>
+<p>Promise 是异步编程的一种解决方案，比传统的解决方案 callback 更加的优雅。它最早由社区提出和实现的，ES6 将其写进了语言标准，统一了用法，原生提供了 Promise 对象。</p>
+<blockquote>
+<p>不使用 ES6</p>
+</blockquote>
+<p>嵌套两个 setTimeout 回调函数：</p>
+<pre><code>setTimeout(function()&#123;    console.log('Hello');     setTimeout(function()    &#123;        console.log('Hi');     &#125;, 1000);&#125;, 1000);
+</code></pre>
+<blockquote>
+<p>使用 ES6</p>
+</blockquote>
+<pre><code>var waitSecond = new Promise(function(resolve, reject)&#123;    setTimeout(resolve, 1000);&#125;);
+waitSecond    .then(function()    &#123;      console.log(&quot;Hello&quot;);       return waitSecond;    &#125;)    .then(function()    &#123;        console.log(&quot;Hi&quot;);     &#125;);
+</code></pre>
+<p>上面的的代码使用两个 then 来进行异步编程串行化，避免了回调地狱：</p>
+<h3 id="10支持let与const"><a class="markdownIt-Anchor" href="#10支持let与const">#</a> 10. 支持 let 与 const</h3>
+<p>在之前 JS 是没有块级作用域的，const 与 let 填补了这方便的空白，const 与 let 都是块级作用域。</p>
+<blockquote>
+<p>使用 var 定义的变量为函数级作用域：</p>
+</blockquote>
+<pre><code>&#123;  var a = 10;&#125;
+console.log(a); 
+</code></pre>
+<blockquote>
+<p>使用 let 与 const 定义的变量为块级作用域：</p>
+</blockquote>
+<pre><code>&#123;  let a = 10;&#125;
+console.log(a); 
+</code></pre>
+<h2 id="三-es7新特性2016"><a class="markdownIt-Anchor" href="#三-es7新特性2016">#</a> 三、ES7 新特性（2016）</h2>
+<p>ES2016 添加了两个小的特性来说明标准化过程：</p>
+<ul>
+<li>数组 includes () 方法，用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回 false。</li>
+<li>a ** b 指数运算符，它与 Math.pow (a, b) 相同。</li>
+</ul>
+<h3 id="1arrayprototypeincludes"><a class="markdownIt-Anchor" href="#1arrayprototypeincludes">#</a> 1.Array.prototype.includes()</h3>
+<p><code>includes()</code>  函数用来判断一个数组是否包含一个指定的值，如果包含则返回  <code>true</code> ，否则返回  <code>false</code> 。</p>
+<p><code>includes</code>  函数与  <code>indexOf</code>  函数很相似，下面两个表达式是等价的：</p>
+<pre><code>arr.includes(x)arr.indexOf(x) &gt;= 0
+</code></pre>
+<p>接下来我们来判断数字中是否包含某个元素：</p>
+<blockquote>
+<p>在 ES7 之前的做法</p>
+</blockquote>
+<p>使用  <code>indexOf()</code>  验证数组中是否存在某个元素，这时需要根据返回值是否为 - 1 来判断：</p>
+<pre><code>let arr = ['react', 'angular', 'vue'];
+if (arr.indexOf('react') !== -1)&#123;    console.log('react存在');&#125;
+</code></pre>
+<blockquote>
+<p>使用 ES7 的 includes ()</p>
+</blockquote>
+<p>使用 includes () 验证数组中是否存在某个元素，这样更加直观简单：</p>
+<pre><code>let arr = ['react', 'angular', 'vue'];
+if (arr.includes('react'))&#123;    console.log('react存在');&#125;
+</code></pre>
+<h3 id="2指数操作符"><a class="markdownIt-Anchor" href="#2指数操作符">#</a> 2. 指数操作符</h3>
+<p>在 ES7 中引入了指数运算符  <code>**</code> ，  <code>**</code>  具有与  <code>Math.pow(..)</code>  等效的计算结果。</p>
+<blockquote>
+<p>不使用指数操作符</p>
+</blockquote>
+<p>使用自定义的递归函数 calculateExponent 或者 Math.pow () 进行指数运算：</p>
+<pre><code>function calculateExponent(base, exponent)&#123;    if (exponent === 1)    &#123;        return base;    &#125;    else    &#123;        return base * calculateExponent(base, exponent - 1);    &#125;&#125;
+console.log(calculateExponent(2, 10)); console.log(Math.pow(2, 10)); 
+</code></pre>
+<blockquote>
+<p>使用指数操作符</p>
+</blockquote>
+<p>使用指数运算符 **，就像 +、- 等操作符一样：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">**</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="四-es8新特性2017"><a class="markdownIt-Anchor" href="#四-es8新特性2017">#</a> 四、ES8 新特性（2017）</h2>
+<ul>
+<li>async/await</li>
+<li><code>Object.values()</code></li>
+<li><code>Object.entries()</code></li>
+<li>String padding:  <code>padStart()</code>  和  <code>padEnd()</code> ，填充字符串达到当前长度</li>
+<li>函数参数列表结尾允许逗号</li>
+<li><code>Object.getOwnPropertyDescriptors()</code></li>
+<li><code>ShareArrayBuffer</code>  和  <code>Atomics</code>  对象，用于从共享内存位置读取和写入</li>
+</ul>
+<h3 id="1asyncawait"><a class="markdownIt-Anchor" href="#1asyncawait">#</a> 1.async/await</h3>
+<p>ES2018 引入异步迭代器（asynchronous iterators），这就像常规迭代器，除了  <code>next()</code>  方法返回一个 Promise。因此  <code>await</code>  可以和  <code>for...of</code>  循环一起使用，以串行的方式运行异步操作。例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token keyword">for</span> <span class="token keyword">await</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">of</span> array<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token function">doSomething</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="2objectvalues"><a class="markdownIt-Anchor" href="#2objectvalues">#</a> 2.Object.values()</h3>
+<p><code>Object.values()</code>  是一个与  <code>Object.keys()</code>  类似的新函数，但返回的是 Object 自身属性的所有值，不包括继承的值。</p>
+<p>假设我们要遍历如下对象  <code>obj</code>  的所有值：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><blockquote>
+<p>不使用 Object.values () :ES7</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> vals<span class="token operator">=</span>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token operator">=></span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>vals<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><blockquote>
+<p>使用 Object.values () :ES8</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> values<span class="token operator">=</span>Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>从上述代码中可以看出  <code>Object.values()</code>  为我们省去了遍历 key，并根据这些 key 获取 value 的步骤。</p>
+<h3 id="3objectentries"><a class="markdownIt-Anchor" href="#3objectentries">#</a> 3.Object.entries()</h3>
+<p><code>Object.entries()</code>  函数返回一个给定对象自身可枚举属性的键值对的数组。</p>
+<p>接下来我们来遍历上文中的  <code>obj</code>  对象的所有属性的 key 和 value：</p>
+<blockquote>
+<p>不使用 Object.entries () :ES7</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">key</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'key:'</span><span class="token operator">+</span>key<span class="token operator">+</span><span class="token string">' value:'</span><span class="token operator">+</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">//key:b value:2</span></pre></td></tr></table></figure><blockquote>
+<p>使用 Object.entries () :ES8</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span>value<span class="token punctuation">]</span> <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">key: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>key<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> value:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>value<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">//key:b value:2</span></pre></td></tr></table></figure><h3 id="4string-padding"><a class="markdownIt-Anchor" href="#4string-padding">#</a> 4.String padding</h3>
+<p>在 ES8 中 String 新增了两个实例函数  <code>String.prototype.padStart</code>  和  <code>String.prototype.padEnd</code> ，允许将空字符串或其他字符串添加到原始字符串的开头或结尾。</p>
+<blockquote>
+<p>String.padStart(targetLength,[padString])</p>
+</blockquote>
+<ul>
+<li>targetLength: 当前字符串需要填充到的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身。</li>
+<li>padString:(可选) 填充字符串。如果字符串太长，使填充后的字符串长度超过了目标长度，则只保留最左侧的部分，其他部分会被截断，此参数的缺省值为 &quot; &quot;。</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'0.0'</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'10'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'0.0'</span><span class="token punctuation">.</span><span class="token function">padStart</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><blockquote>
+<p>String.padEnd(targetLength,padString])</p>
+</blockquote>
+<ul>
+<li>targetLength: 当前字符串需要填充到的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身。</li>
+<li>padString:(可选) 填充字符串。如果字符串太长，使填充后的字符串长度超过了目标长度，则只保留最左侧的部分，其他部分会被截断，此参数的缺省值为 &quot; &quot;；</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'0.0'</span><span class="token punctuation">.</span><span class="token function">padEnd</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'0.0'</span><span class="token punctuation">.</span><span class="token function">padEnd</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">'0'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="5函数参数列表结尾允许逗号"><a class="markdownIt-Anchor" href="#5函数参数列表结尾允许逗号">#</a> 5. 函数参数列表结尾允许逗号</h3>
+<p>主要作用是方便使用 git 进行多人协作开发时修改同一个函数减少不必要的行变更。</p>
+<h3 id="6objectgetownpropertydescriptors"><a class="markdownIt-Anchor" href="#6objectgetownpropertydescriptors">#</a> 6.Object.getOwnPropertyDescriptors()</h3>
+<p><code>Object.getOwnPropertyDescriptors()</code>  函数用来获取一个对象的所有自身属性的描述符，如果没有任何自身属性，则返回空对象。</p>
+<blockquote>
+<p>函数原型：</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptors</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span></pre></td></tr></table></figure><p>返回  <code>obj</code>  对象的所有自身属性的描述符，如果没有任何自身属性，则返回空对象。</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> obj2 <span class="token operator">=</span> <span class="token punctuation">&#123;</span>    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'Jine'</span><span class="token punctuation">,</span>    <span class="token keyword">get</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token string">'18'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptors</span><span class="token punctuation">(</span>obj2<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">//   age: &#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">//     enumerable: true,</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//     set: undefined</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">//   name: &#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">//     enumerable: true,</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">//        writable:true</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// &#125;</span></pre></td></tr></table></figure><h3 id="7sharedarraybuffer对象"><a class="markdownIt-Anchor" href="#7sharedarraybuffer对象">#</a> 7.SharedArrayBuffer 对象</h3>
+<p>SharedArrayBuffer 对象用来表示一个通用的，固定长度的原始二进制数据缓冲区，类似于 ArrayBuffer 对象，它们都可以用来在共享内存（shared memory）上创建视图。与 ArrayBuffer 不同的是，SharedArrayBuffer 不能被分离。</p>
+<pre><code>new SharedArrayBuffer(length)
+</code></pre>
+<h3 id="8atomics对象"><a class="markdownIt-Anchor" href="#8atomics对象">#</a> 8.Atomics 对象</h3>
+<p>Atomics 对象提供了一组静态方法用来对 SharedArrayBuffer 对象进行原子操作。</p>
+<p>这些原子操作属于 Atomics 模块。与一般的全局对象不同，Atomics 不是构造函数，因此不能使用 new 操作符调用，也不能将其当作函数直接调用。Atomics 的所有属性和方法都是静态的（与 Math 对象一样）。</p>
+<p>多个共享内存的线程能够同时读写同一位置上的数据。原子操作会确保正在读或写的数据的值是符合预期的，即下一个原子操作一定会在上一个原子操作结束后才会开始，其操作过程不会中断。</p>
+<blockquote>
+<p>将指定位置上的数组元素与给定的值相加，并返回相加前该元素的值。</p>
+<p>将指定位置上的数组元素与给定的值相与，并返回与操作前该元素的值。</p>
+</blockquote>
+<ul>
+<li>Atomics.compareExchange()</li>
+</ul>
+<blockquote>
+<p>如果数组中指定的元素与给定的值相等，则将其更新为新的值，并返回该元素原先的值。</p>
+<p>将数组中指定的元素更新为给定的值，并返回该元素更新前的值。</p>
+<p>返回数组中指定元素的值。</p>
+<p>将指定位置上的数组元素与给定的值相或，并返回或操作前该元素的值。</p>
+<p>将数组中指定的元素设置为给定的值，并返回该值。</p>
+<p>将指定位置上的数组元素与给定的值相减，并返回相减前该元素的值。</p>
+<p>将指定位置上的数组元素与给定的值相异或，并返回异或操作前该元素的值。</p>
+</blockquote>
+<p>wait () 和 wake () 方法采用的是 Linux 上的 futexes 模型（fast user-space mutex，快速用户空间互斥量），可以让进程一直等待直到某个特定的条件为真，主要用于实现阻塞。</p>
+<blockquote>
+<p>检测数组中某个指定位置上的值是否仍然是给定值，是则保持挂起直到被唤醒或超时。返回值为 “ok”、“not-equal” 或 “time-out”。调用时，如果当前线程不允许阻塞，则会抛出异常（大多数浏览器都不允许在主线程中调用 wait ()）。</p>
+<p>唤醒等待队列中正在数组指定位置的元素上等待的线程。返回值为成功唤醒的线程数量。</p>
+<p>可以用来检测当前系统是否支持硬件级的原子操作。对于指定大小的数组，如果当前系统支持硬件级的原子操作，则返回 true；否则就意味着对于该数组，Atomics 对象中的各原子操作都只能用锁来实现。此函数面向的是技术专家。–&gt;</p>
+</blockquote>
+<h2 id="五-es9新特性2018"><a class="markdownIt-Anchor" href="#五-es9新特性2018">#</a> 五、ES9 新特性（2018）</h2>
+<h3 id="1异步迭代"><a class="markdownIt-Anchor" href="#1异步迭代">#</a> 1. 异步迭代</h3>
+<p>在  <code>async/await</code>  的某些时刻，你可能尝试在同步循环中调用异步函数。例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">of</span> array<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token keyword">await</span> <span class="token function">doSomething</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>这段代码不会正常运行，下面这段同样也不会：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token parameter">i</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>    <span class="token keyword">await</span> <span class="token function">doSomething</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>这段代码中，循环本身依旧保持同步，并在在内部异步函数之前全部调用完成。</p>
+<p>ES2018 引入异步迭代器（asynchronous iterators），这就像常规迭代器，除了  <code>next()</code>  方法返回一个 Promise。因此  <code>await</code>  可以和  <code>for...of</code>  循环一起使用，以串行的方式运行异步操作。例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">process</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token keyword">for</span> <span class="token keyword">await</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">of</span> array<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>    <span class="token function">doSomething</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="2promisefinally"><a class="markdownIt-Anchor" href="#2promisefinally">#</a> 2.Promise.finally()</h3>
+<p>一个 Promise 调用链要么成功到达最后一个  <code>.then()</code> ，要么失败触发  <code>.catch()</code> 。在某些情况下，你想要在无论 Promise 运行成功还是失败，运行相同的代码，例如清除，删除对话，关闭数据库连接等。</p>
+<p><code>.finally()</code>  允许你指定最终的逻辑：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token function">doSomething1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>doSomething2<span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>doSomething3<span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>  <span class="token punctuation">.</span><span class="token function">finally</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="3restspread-属性"><a class="markdownIt-Anchor" href="#3restspread-属性">#</a> 3.Rest/Spread 属性</h3>
+<p>ES2015 引入了 Rest 参数和扩展运算符。三个点（…）仅用于数组。Rest 参数语法允许我们将一个不定数量的参数表示为一个数组。</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">restParam</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">function</span> <span class="token function">restParam</span><span class="token punctuation">(</span><span class="token parameter">p1<span class="token punctuation">,</span> p2<span class="token punctuation">,</span> <span class="token operator">...</span>p3</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// p2 = 2</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>展开操作符以相反的方式工作，将数组转换成可传递给函数的单独参数。例如  <code>Math.max()</code>  返回给定数字中的最大值：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">99</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">48</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token operator">...</span>values<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 100</span></pre></td></tr></table></figure><p>ES2018 为对象解构提供了和数组一样的 Rest 参数（）和展开操作符，一个简单的例子：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> myObject <span class="token operator">=</span> <span class="token punctuation">&#123;</span>  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>  <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> <span class="token punctuation">&#123;</span> a<span class="token punctuation">,</span> <span class="token operator">...</span>x <span class="token punctuation">&#125;</span> <span class="token operator">=</span> myObject<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// x = &#123; b: 2, c: 3 &#125;</span></pre></td></tr></table></figure><p>或者你可以使用它给函数传递参数：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">restParam</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>  <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">function</span> <span class="token function">restParam</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> a<span class="token punctuation">,</span> <span class="token operator">...</span>x <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// x = &#123; b: 2, c: 3 &#125;&#125;</span></pre></td></tr></table></figure><p>跟数组一样，Rest 参数只能在声明的结尾处使用。此外，它只适用于每个对象的顶层，如果对象中嵌套对象则无法适用。</p>
+<p>扩展运算符可以在其他对象内使用，例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> obj1 <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token keyword">const</span> obj2 <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token operator">...</span>obj1<span class="token punctuation">,</span> <span class="token literal-property property">z</span><span class="token operator">:</span> <span class="token number">26</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>可以使用扩展运算符拷贝一个对象，像是这样  <code>obj2 = &#123;...obj1&#125;</code> ，但是 <strong>这只是一个对象的浅拷贝</strong>。另外，如果一个对象 A 的属性是对象 B，那么在克隆后的对象 cloneB 中，该属性指向对象 B。</p>
+<h3 id="4正则表达式命名捕获组"><a class="markdownIt-Anchor" href="#4正则表达式命名捕获组">#</a> 4. 正则表达式命名捕获组</h3>
+<p>JavaScript 正则表达式可以返回一个匹配的对象 —— 一个包含匹配字符串的类数组，例如：以  <code>YYYY-MM-DD</code>  的格式解析日期：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reDate <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">([0-9]&#123;4&#125;)-([0-9]&#123;2&#125;)-([0-9]&#123;2&#125;)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>  match  <span class="token operator">=</span> reDate<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'2018-04-30'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  year   <span class="token operator">=</span> match<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>   month  <span class="token operator">=</span> match<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>   day    <span class="token operator">=</span> match<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>这样的代码很难读懂，并且改变正则表达式的结构有可能改变匹配对象的索引。</p>
+<p>ES2018 允许命名捕获组使用符号  <code>?&lt;name&gt;</code> ，在打开捕获括号  <code>(</code> 后立即命名，示例如下：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reDate <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?&lt;year>[0-9]&#123;4&#125;)-(?&lt;month>[0-9]&#123;2&#125;)-(?&lt;day>[0-9]&#123;2&#125;)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>  match  <span class="token operator">=</span> reDate<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'2018-04-30'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  year   <span class="token operator">=</span> match<span class="token punctuation">.</span>groups<span class="token punctuation">.</span>year<span class="token punctuation">,</span>    month  <span class="token operator">=</span> match<span class="token punctuation">.</span>groups<span class="token punctuation">.</span>month<span class="token punctuation">,</span> <span class="token comment">// 04  day    = match.groups.day;</span></pre></td></tr></table></figure><p>任何匹配失败的命名组都将返回  <code>undefined</code> 。</p>
+<p>命名捕获也可以使用在  <code>replace()</code>  方法中。例如将日期转换为美国的 MM-DD-YYYY 格式：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reDate <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?&lt;year>[0-9]&#123;4&#125;)-(?&lt;month>[0-9]&#123;2&#125;)-(?&lt;day>[0-9]&#123;2&#125;)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="2"></td><td><pre>      d <span class="token operator">=</span> <span class="token string">'2018-04-30'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      usDate <span class="token operator">=</span> d<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reDate<span class="token punctuation">,</span> <span class="token string">'$&lt;month>-$&lt;day>-$&lt;year>'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="5正则表达式反向断言"><a class="markdownIt-Anchor" href="#5正则表达式反向断言">#</a> 5. 正则表达式反向断言</h3>
+<p>目前 JavaScript 在正则表达式中支持先行断言（lookahead）。这意味着匹配会发生，但不会有任何捕获，并且断言没有包含在整个匹配字段中。例如从价格中捕获货币符号：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reLookahead <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\D(?=\d+)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>match <span class="token operator">=</span> reLookahead<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'$123.89'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> match<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>ES2018 引入以相同方式工作但是匹配前面的反向断言（lookbehind），这样我就可以忽略货币符号，单纯的捕获价格的数字：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reLookbehind <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?&lt;=\D)\d+</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>match <span class="token operator">=</span> reLookbehind<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'$123.89'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> match<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>以上是 <strong>肯定反向断言</strong>，非数字  <code>\D</code>  必须存在。同样的，还存在 <strong>否定反向断言</strong>，表示一个值必须不存在，例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span>  reLookbehindNeg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(?&lt;!\D)\d+</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>match <span class="token operator">=</span> reLookbehind<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">'$123.89'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> match<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="6正则表达式dotall模式"><a class="markdownIt-Anchor" href="#6正则表达式dotall模式">#</a> 6. 正则表达式 dotAll 模式</h3>
+<p>正则表达式中点  <code>.</code>  匹配除回车外的任何单字符，标记  <code>s</code>  改变这种行为，允许行终止符的出现，例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">hello.world</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'hello\nworld'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">hello.world</span><span class="token regex-delimiter">/</span><span class="token regex-flags">s</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'hello\nworld'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="7正则表达式-unicode-转义"><a class="markdownIt-Anchor" href="#7正则表达式-unicode-转义">#</a> 7. 正则表达式 Unicode 转义</h3>
+<p>到目前为止，在正则表达式中本地访问 Unicode 字符属性是不被允许的。ES2018 添加了 Unicode 属性转义 —— 形式为  <code>\p&#123;...&#125;</code>  和  <code>\P&#123;...&#125;</code> ，在正则表达式中使用标记  <code>u</code>  (unicode) 设置，在  <code>\p</code>  块儿内，可以以键值对的方式设置需要匹配的属性而非具体内容。例如：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> reGreekSymbol <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\p&#123;Script=Greek&#125;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">u</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>reGreekSymbol<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'π'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>此特性可以避免使用特定 Unicode 区间来进行内容类型判断，提升可读性和可维护性。</p>
+<h3 id="8非转义序列的模板字符串"><a class="markdownIt-Anchor" href="#8非转义序列的模板字符串">#</a> 8. 非转义序列的模板字符串</h3>
+<p>之前，  <code>\u</code>  开始一个 unicode 转义，  <code>\x</code>  开始一个十六进制转义，  <code>\</code>  后跟一个数字开始一个八进制转义。这使得创建特定的字符串变得不可能，例如 Windows 文件路径  <code>C:\uuu\xxx\111</code> 。更多细节参考模板字符串。</p>
+<h2 id="六-es10新特性2019"><a class="markdownIt-Anchor" href="#六-es10新特性2019">#</a> 六、ES10 新特性（2019）</h2>
+<ul>
+<li>行分隔符（U + 2028）和段分隔符（U + 2029）符号现在允许在字符串文字中，与 JSON 匹配</li>
+<li>更加友好的 JSON.stringify</li>
+<li>新增了 Array 的  <code>flat()</code>  方法和  <code>flatMap()</code>  方法</li>
+<li>新增了 String 的  <code>trimStart()</code>  方法和  <code>trimEnd()</code>  方法</li>
+<li><code>Object.fromEntries()</code></li>
+<li><code>Symbol.prototype.description</code></li>
+<li><code>String.prototype.matchAll</code></li>
+<li><code>Function.prototype.toString()</code>  现在返回精确字符，包括空格和注释</li>
+<li>简化  <code>try &#123;&#125; catch &#123;&#125;</code> , 修改  <code>catch</code>  绑定</li>
+<li>新的基本数据类型  <code>BigInt</code></li>
+<li>globalThis</li>
+<li>import()</li>
+<li>Legacy RegEx</li>
+<li>私有的实例方法和访问器</li>
+</ul>
+<h3 id="1行分隔符u-2028和段分隔符u-2029符号现在允许在字符串文字中与json匹配"><a class="markdownIt-Anchor" href="#1行分隔符u-2028和段分隔符u-2029符号现在允许在字符串文字中与json匹配">#</a> 1. 行分隔符（U + 2028）和段分隔符（U + 2029）符号现在允许在字符串文字中，与 JSON 匹配</h3>
+<p>以前，这些符号在字符串文字中被视为行终止符，因此使用它们会导致 SyntaxError 异常。</p>
+<h3 id="2更加友好的-jsonstringify"><a class="markdownIt-Anchor" href="#2更加友好的-jsonstringify">#</a> 2. 更加友好的 JSON.stringify</h3>
+<p>如果输入 Unicode 格式但是超出范围的字符，在原先 JSON.stringify 返回格式错误的 Unicode 字符串。现在实现了一个改变 JSON.stringify 的第 3 阶段提案，因此它为其输出转义序列，使其成为有效 Unicode（并以 UTF-8 表示）</p>
+<h3 id="3新增了array的-flat方法和-flatmap方法"><a class="markdownIt-Anchor" href="#3新增了array的-flat方法和-flatmap方法">#</a> 3. 新增了 Array 的  <code>flat()</code>  方法和  <code>flatMap()</code>  方法</h3>
+<p><code>flat()</code>  和  <code>flatMap()</code>  本质上就是是归纳（reduce） 与 合并（concat）的操作。</p>
+<h4 id="arrayprototypeflat"><a class="markdownIt-Anchor" href="#arrayprototypeflat">#</a> Array.prototype.flat()</h4>
+<p><code>flat()</code>  方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>arr1<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">var</span> arr2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>arr2<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">var</span> arr3 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>arr3<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// 使用 Infinity 作为深度，展开任意深度的嵌套数组 arr3.flat (Infinity);</span></pre></td></tr></table></figure><ul>
+<li>其次，还可以利用  <code>flat()</code>  方法的特性来去除数组的空项</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> arr4 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>arr4<span class="token punctuation">.</span><span class="token function">flat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h4 id="arrayprototypeflatmap"><a class="markdownIt-Anchor" href="#arrayprototypeflatmap">#</a> Array.prototype.flatMap()</h4>
+<p><code>flatMap()</code>  方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。它与 map 和 深度值 1 的 flat 几乎相同，但 flatMap 通常在合并成一种方法的效率稍微高一些。 这里我们拿 map 方法与 flatMap 方法做一个比较。</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>arr1<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=></span> <span class="token punctuation">[</span>x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>arr1<span class="token punctuation">.</span><span class="token function">flatMap</span><span class="token punctuation">(</span><span class="token parameter">x</span> <span class="token operator">=></span> <span class="token punctuation">[</span>x <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// 只会将 flatMap 中的函数返回的数组 “压平” 一层 arr1.flatMap (x => [[x * 2]]);</span></pre></td></tr></table></figure><h3 id="4新增了string的-trimstart方法和-trimend方法"><a class="markdownIt-Anchor" href="#4新增了string的-trimstart方法和-trimend方法">#</a> 4. 新增了 String 的  <code>trimStart()</code>  方法和  <code>trimEnd()</code>  方法</h3>
+<p>新增的这两个方法很好理解，分别去除字符串首尾空白字符，这里就不用例子说声明了。</p>
+<h3 id="5-objectfromentries"><a class="markdownIt-Anchor" href="#5-objectfromentries">#</a> 5.  <code>Object.fromEntries()</code></h3>
+<p><code>Object.entries()</code>  方法的作用是返回一个给定对象自身可枚举属性的键值对数组，其排列与使用 for…in 循环遍历该对象时返回的顺序一致（区别在于 for-in 循环也枚举原型链中的属性）。</p>
+<p><strong>而 Object.fromEntries () 则是 Object.entries () 的反转。</strong></p>
+<p><code>Object.fromEntries()</code>  函数传入一个键值对的列表，并返回一个带有这些键值对的新对象。这个迭代参数应该是一个能够实现 @iterator 方法的的对象，返回一个迭代器对象。它生成一个具有两个元素的类似数组的对象，第一个元素是将用作属性键的值，第二个元素是与该属性键关联的值。</p>
+<ul>
+<li>通过 Object.fromEntries， 可以将 Map 转化为 Object:</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'foo'</span><span class="token punctuation">,</span> <span class="token string">'bar'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'baz'</span><span class="token punctuation">,</span> <span class="token number">42</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> obj <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">fromEntries</span><span class="token punctuation">(</span>map<span class="token punctuation">)</span><span class="token punctuation">;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><ul>
+<li>通过 Object.fromEntries， 可以将 Array 转化为 Object:</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token punctuation">[</span><span class="token string">'0'</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span> <span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">const</span> obj <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">fromEntries</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="6-symbolprototypedescription"><a class="markdownIt-Anchor" href="#6-symbolprototypedescription">#</a> 6.  <code>Symbol.prototype.description</code></h3>
+<p>通过工厂函数 Symbol（）创建符号时，您可以选择通过参数提供字符串作为描述：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> sym <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'The description'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>以前，访问描述的唯一方法是将符号转换为字符串：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token function">String</span><span class="token punctuation">(</span>sym<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'Symbol(The description)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>现在引入了 getter Symbol.prototype.description 以直接访问描述：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>sym<span class="token punctuation">.</span>description<span class="token punctuation">,</span> <span class="token string">'The description'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="7-stringprototypematchall"><a class="markdownIt-Anchor" href="#7-stringprototypematchall">#</a> 7.  <code>String.prototype.matchAll</code></h3>
+<p><code>matchAll()</code>  方法返回一个包含所有匹配正则表达式及分组捕获结果的迭代器。 在 matchAll 出现之前，通过在循环中调用 regexp.exec 来获取所有匹配项信息（regexp 需使用 /g 标志：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> regexp <span class="token operator">=</span> <span class="token function">RegExp</span><span class="token punctuation">(</span><span class="token string">'foo*'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token string">'table football, foosball'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>matches <span class="token operator">=</span> regexp<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Found </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>matches<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">. Next starts at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>regexp<span class="token punctuation">.</span>lastIndex<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">.</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token comment">// expected output: "Found foo. Next starts at 19."&#125;</span></pre></td></tr></table></figure><p>如果使用 matchAll ，就可以不必使用 while 循环加 exec 方式（且正则表达式需使用／g 标志）。使用 matchAll 会得到一个迭代器的返回值，配合 for…of, array spread, or Array.from () 可以更方便实现功能：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">const</span> regexp <span class="token operator">=</span> <span class="token function">RegExp</span><span class="token punctuation">(</span><span class="token string">'foo*'</span><span class="token punctuation">,</span><span class="token string">'g'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token string">'table football, foosball'</span><span class="token punctuation">;</span><span class="token keyword">let</span> matches <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">matchAll</span><span class="token punctuation">(</span>regexp<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> match <span class="token keyword">of</span> matches<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>match<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// Array [ "foo" ]</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// Call matchAll again to create a new iteratormatches = str.matchAll(regexp);</span></pre></td></tr><tr><td data-num="6"></td><td><pre>Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>matches<span class="token punctuation">,</span> <span class="token parameter">m</span> <span class="token operator">=></span> m<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h4 id="matchall可以更好的用于分组"><a class="markdownIt-Anchor" href="#matchall可以更好的用于分组">#</a> matchAll 可以更好的用于分组</h4>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> regexp <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">t(e)(st(\d?))</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'test1test2'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>regexp<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">let</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>str<span class="token punctuation">.</span><span class="token function">matchAll</span><span class="token punctuation">(</span>regexp<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="8-functionprototypetostring现在返回精确字符包括空格和注释"><a class="markdownIt-Anchor" href="#8-functionprototypetostring现在返回精确字符包括空格和注释">#</a> 8.  <code>Function.prototype.toString()</code>  现在返回精确字符，包括空格和注释</h3>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">function</span> <span class="token comment">/* comment */</span> foo <span class="token comment">/* another comment */</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// ES2019 会把注释一同打印 console.log (foo.toString ()); </span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 箭头函数 const bar  = /* another comment */ () => &#123;&#125;;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bar<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="9修改-catch-绑定"><a class="markdownIt-Anchor" href="#9修改-catch-绑定">#</a> 9. 修改  <code>catch</code>  绑定</h3>
+<p>在 ES10 之前，我们必须通过语法为 catch 子句绑定异常变量，无论是否有必要。很多时候 catch 块是多余的。 ES10 提案使我们能够简单的把变量省略掉。</p>
+<p>不算大的改动。</p>
+<p>之前是</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">try</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>现在是</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">try</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="10新的基本数据类型-bigint"><a class="markdownIt-Anchor" href="#10新的基本数据类型-bigint">#</a> 10. 新的基本数据类型  <code>BigInt</code></h3>
+<p>现在的基本数据类型（值类型）不止 5 种（ES6 之后是六种）了哦！加上 BigInt 一共有七种基本数据类型，分别是： String、Number、Boolean、Null、Undefined、Symbol、BigInt</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-23 08:19:31" itemprop="dateModified" datetime="2022-07-23T08:19:31+08:00">2022-07-23</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Duke Shao 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Duke Shao 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Duke Shao 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Duke Shao <i class="ic i-at"><em>@</em></i>你的名字
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://dukeshao.com/2022/07/13/C_Javascript/ES6_10/" title="ES6-10">https://dukeshao.com/2022/07/13/C_Javascript/ES6_10/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/07/13/a_Hexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/TOC%E6%8C%87%E5%8D%97/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;006gkh44ly1fw6ambnk56j31kw0w0e2q.jpg" title="TOC指南">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> a_Hexo注意事项</span>
+  <h3>TOC指南</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/07/13/C_Javascript/IndexedDB/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;9bd9b167gy1g4lhovb615j21hc0xcqrc.jpg" title="IndexedDB">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> C_Javascript</span>
+  <h3>IndexedDB</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-es6-10%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88"><span class="toc-number">1.</span> <span class="toc-text"> 一、ES6-10 新特性一览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-es6%E6%96%B0%E7%89%B9%E6%80%A72015"><span class="toc-number">2.</span> <span class="toc-text"> 二、ES6 新特性（2015）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E7%B1%BBclass"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 类（class）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%A8%A1%E5%9D%97%E5%8C%96module"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 模块化 (Module)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%BC%E5%87%BAexport"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 导出 (export)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5import"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 导入 (import)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E7%AE%AD%E5%A4%B4arrow%E5%87%BD%E6%95%B0"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 箭头（Arrow）函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.1.</span> <span class="toc-text"> 箭头函数的结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD%E7%9B%91%E5%90%AC%E5%99%A8%E6%97%B6%E7%9A%84%E9%99%B7%E9%98%B1"><span class="toc-number">2.3.2.</span> <span class="toc-text"> 卸载监听器时的陷阱</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">2.4.</span> <span class="toc-text"> 4. 函数参数的默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.5.</span> <span class="toc-text"> 5. 模板字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%80%BC"><span class="toc-number">2.5.1.</span> <span class="toc-text"> 获取数组中的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%9A%84%E5%80%BC"><span class="toc-number">2.5.2.</span> <span class="toc-text"> 获取对象中的值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E5%BB%B6%E5%B1%95%E6%93%8D%E4%BD%9C%E7%AC%A6spread-operator"><span class="toc-number">2.6.</span> <span class="toc-text"> 7. 延展操作符 (Spread operator)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95"><span class="toc-number">2.6.1.</span> <span class="toc-text"> 语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">2.6.2.</span> <span class="toc-text"> 应用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8ecmascript-2018%E4%B8%AD%E5%BB%B6%E5%B1%95%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%A2%9E%E5%8A%A0%E4%BA%86%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%94%AF%E6%8C%81"><span class="toc-number">2.6.3.</span> <span class="toc-text"> 在 ECMAScript 2018 中延展操作符增加了对对象的支持</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8react%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">2.6.4.</span> <span class="toc-text"> 在 React 中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E6%83%85%E5%86%B5%E4%B8%8B%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%86%99"><span class="toc-number">2.6.5.</span> <span class="toc-text"> 一般情况下我们应该这样写</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%AE%80%E5%86%99"><span class="toc-number">2.7.</span> <span class="toc-text"> 8. 对象属性简写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9promise"><span class="toc-number">2.8.</span> <span class="toc-text"> 9.Promise</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E6%94%AF%E6%8C%81let%E4%B8%8Econst"><span class="toc-number">2.9.</span> <span class="toc-text"> 10. 支持 let 与 const</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-es7%E6%96%B0%E7%89%B9%E6%80%A72016"><span class="toc-number">3.</span> <span class="toc-text"> 三、ES7 新特性（2016）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1arrayprototypeincludes"><span class="toc-number">3.1.</span> <span class="toc-text"> 1.Array.prototype.includes()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%8C%87%E6%95%B0%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 指数操作符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-es8%E6%96%B0%E7%89%B9%E6%80%A72017"><span class="toc-number">4.</span> <span class="toc-text"> 四、ES8 新特性（2017）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1asyncawait"><span class="toc-number">4.1.</span> <span class="toc-text"> 1.async&#x2F;await</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2objectvalues"><span class="toc-number">4.2.</span> <span class="toc-text"> 2.Object.values()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3objectentries"><span class="toc-number">4.3.</span> <span class="toc-text"> 3.Object.entries()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4string-padding"><span class="toc-number">4.4.</span> <span class="toc-text"> 4.String padding</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8%E7%BB%93%E5%B0%BE%E5%85%81%E8%AE%B8%E9%80%97%E5%8F%B7"><span class="toc-number">4.5.</span> <span class="toc-text"> 5. 函数参数列表结尾允许逗号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6objectgetownpropertydescriptors"><span class="toc-number">4.6.</span> <span class="toc-text"> 6.Object.getOwnPropertyDescriptors()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7sharedarraybuffer%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.7.</span> <span class="toc-text"> 7.SharedArrayBuffer 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8atomics%E5%AF%B9%E8%B1%A1"><span class="toc-number">4.8.</span> <span class="toc-text"> 8.Atomics 对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-es9%E6%96%B0%E7%89%B9%E6%80%A72018"><span class="toc-number">5.</span> <span class="toc-text"> 五、ES9 新特性（2018）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E5%BC%82%E6%AD%A5%E8%BF%AD%E4%BB%A3"><span class="toc-number">5.1.</span> <span class="toc-text"> 1. 异步迭代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2promisefinally"><span class="toc-number">5.2.</span> <span class="toc-text"> 2.Promise.finally()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3restspread-%E5%B1%9E%E6%80%A7"><span class="toc-number">5.3.</span> <span class="toc-text"> 3.Rest&#x2F;Spread 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%91%BD%E5%90%8D%E6%8D%95%E8%8E%B7%E7%BB%84"><span class="toc-number">5.4.</span> <span class="toc-text"> 4. 正则表达式命名捕获组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8F%8D%E5%90%91%E6%96%AD%E8%A8%80"><span class="toc-number">5.5.</span> <span class="toc-text"> 5. 正则表达式反向断言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8Fdotall%E6%A8%A1%E5%BC%8F"><span class="toc-number">5.6.</span> <span class="toc-text"> 6. 正则表达式 dotAll 模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-unicode-%E8%BD%AC%E4%B9%89"><span class="toc-number">5.7.</span> <span class="toc-text"> 7. 正则表达式 Unicode 转义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E9%9D%9E%E8%BD%AC%E4%B9%89%E5%BA%8F%E5%88%97%E7%9A%84%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">5.8.</span> <span class="toc-text"> 8. 非转义序列的模板字符串</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-es10%E6%96%B0%E7%89%B9%E6%80%A72019"><span class="toc-number">6.</span> <span class="toc-text"> 六、ES10 新特性（2019）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E8%A1%8C%E5%88%86%E9%9A%94%E7%AC%A6u-2028%E5%92%8C%E6%AE%B5%E5%88%86%E9%9A%94%E7%AC%A6u-2029%E7%AC%A6%E5%8F%B7%E7%8E%B0%E5%9C%A8%E5%85%81%E8%AE%B8%E5%9C%A8%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%87%E5%AD%97%E4%B8%AD%E4%B8%8Ejson%E5%8C%B9%E9%85%8D"><span class="toc-number">6.1.</span> <span class="toc-text"> 1. 行分隔符（U + 2028）和段分隔符（U + 2029）符号现在允许在字符串文字中，与 JSON 匹配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E6%9B%B4%E5%8A%A0%E5%8F%8B%E5%A5%BD%E7%9A%84-jsonstringify"><span class="toc-number">6.2.</span> <span class="toc-text"> 2. 更加友好的 JSON.stringify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E6%96%B0%E5%A2%9E%E4%BA%86array%E7%9A%84-flat%E6%96%B9%E6%B3%95%E5%92%8C-flatmap%E6%96%B9%E6%B3%95"><span class="toc-number">6.3.</span> <span class="toc-text"> 3. 新增了 Array 的  flat()  方法和  flatMap()  方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#arrayprototypeflat"><span class="toc-number">6.3.1.</span> <span class="toc-text"> Array.prototype.flat()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#arrayprototypeflatmap"><span class="toc-number">6.3.2.</span> <span class="toc-text"> Array.prototype.flatMap()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E6%96%B0%E5%A2%9E%E4%BA%86string%E7%9A%84-trimstart%E6%96%B9%E6%B3%95%E5%92%8C-trimend%E6%96%B9%E6%B3%95"><span class="toc-number">6.4.</span> <span class="toc-text"> 4. 新增了 String 的  trimStart()  方法和  trimEnd()  方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-objectfromentries"><span class="toc-number">6.5.</span> <span class="toc-text"> 5.  Object.fromEntries()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-symbolprototypedescription"><span class="toc-number">6.6.</span> <span class="toc-text"> 6.  Symbol.prototype.description</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-stringprototypematchall"><span class="toc-number">6.7.</span> <span class="toc-text"> 7.  String.prototype.matchAll</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#matchall%E5%8F%AF%E4%BB%A5%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%94%A8%E4%BA%8E%E5%88%86%E7%BB%84"><span class="toc-number">6.7.1.</span> <span class="toc-text"> matchAll 可以更好的用于分组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-functionprototypetostring%E7%8E%B0%E5%9C%A8%E8%BF%94%E5%9B%9E%E7%B2%BE%E7%A1%AE%E5%AD%97%E7%AC%A6%E5%8C%85%E6%8B%AC%E7%A9%BA%E6%A0%BC%E5%92%8C%E6%B3%A8%E9%87%8A"><span class="toc-number">6.8.</span> <span class="toc-text"> 8.  Function.prototype.toString()  现在返回精确字符，包括空格和注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E4%BF%AE%E6%94%B9-catch-%E7%BB%91%E5%AE%9A"><span class="toc-number">6.9.</span> <span class="toc-text"> 9. 修改  catch  绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E6%96%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-bigint"><span class="toc-number">6.10.</span> <span class="toc-text"> 10. 新的基本数据类型  BigInt</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/07/13/C_Javascript/Ajax/" rel="bookmark" title="Ajax">Ajax</a></li><li><a href="/2022/07/13/C_Javascript/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF/" rel="bookmark" title="面向对象与继承">面向对象与继承</a></li><li><a href="/2022/07/13/C_Javascript/Javascript%E8%BF%9B%E9%98%B6/" rel="bookmark" title="Javascript进阶">Javascript进阶</a></li><li><a href="/2022/07/13/C_Javascript/cookie_%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8_%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="bookmark" title="cookie_本地存储_设计模式">cookie_本地存储_设计模式</a></li><li class="active"><a href="/2022/07/13/C_Javascript/ES6_10/" rel="bookmark" title="ES6-10">ES6-10</a></li><li><a href="/2022/07/13/C_Javascript/IndexedDB/" rel="bookmark" title="IndexedDB">IndexedDB</a></li><li><a href="/2022/07/13/C_Javascript/WEB%20%E7%BB%84%E4%BB%B6%E6%A0%87%E5%87%86/" rel="bookmark" title="WEB 组件标准">WEB 组件标准</a></li><li><a href="/2022/07/13/C_Javascript/Canvas/" rel="bookmark" title="Canvas">Canvas</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Duke Shao"
+      data-src="/images/head.png">
+  <p class="name" itemprop="name">Duke Shao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">11</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/07/13/a_Hexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/TOC%E6%8C%87%E5%8D%97/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/07/13/C_Javascript/IndexedDB/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Duke Shao @ 你的名字</span>
+  </div>
+
+  <div class="copyright">
+    &copy; <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8=">粤ICP备19055048号</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">100k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:31</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/07/13/C_Javascript/ES6_10/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

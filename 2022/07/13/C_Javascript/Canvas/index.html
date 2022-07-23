@@ -1,0 +1,655 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="你的名字" href="https://dukeshao.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="你的名字" href="https://dukeshao.com/atom.xml" />
+<link rel="alternate" type="application/json" title="你的名字" href="https://dukeshao.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://dukeshao.com/2022/07/13/C_Javascript/Canvas/">
+
+
+
+  <title>
+Canvas - C_Javascript |
+你的名字 = 持续学习那些不变的底层知识</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Canvas
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-07-13 06:59:07">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-07-13T06:59:07+08:00">2022-07-13</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">你的名字</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://tva1.sinaimg.cn/large/a15b4afegy1fmvjo4zr31j21hc0u07c9.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/C-Javascript/" itemprop="item" rel="index" title="分类于 C_Javascript"><span itemprop="name">C_Javascript</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://dukeshao.com/2022/07/13/C_Javascript/Canvas/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/head.png">
+    <meta itemprop="name" content="Duke Shao">
+    <meta itemprop="description" content="持续学习那些不变的底层知识, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="你的名字">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="canvas简介"><a class="markdownIt-Anchor" href="#canvas简介">#</a> canvas 简介</h2>
+<ul>
+<li>是 HTML5 提供的一种新标签</li>
+<li>是一个矩形区域的画布，可以用 JavaScript 在上面绘画，控制其每一个像素，本身不具备绘图功能。</li>
+<li>拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。</li>
+</ul>
+<p>使用：</p>
+<pre><code>&lt;canvas width=&quot;600&quot; height=&quot;600&quot;&gt;你的浏览器不支持canvas，请升级浏览器&lt;/canvas&gt;
+</code></pre>
+<h2 id="canvas用途"><a class="markdownIt-Anchor" href="#canvas用途">#</a> canvas 用途</h2>
+<ul>
+<li>游戏：canvas 在基于 Web 的图像显示方面比 Flash 更加立体、更加精巧，canvas 游戏在流畅度和跨平台方面更牛。</li>
+<li>可视化数据。数据图表话，比如：百度的 echart</li>
+<li>banner 广告：Flash 曾经辉煌的时代，智能手机还未曾出现。现在以及未来的智能机时代，HTML5 技术能够在 banner 广告上发挥巨大作用，用 Canvas 实现动态的广告效果再合适不过。</li>
+</ul>
+<h3 id="canvas标签语法和属性"><a class="markdownIt-Anchor" href="#canvas标签语法和属性">#</a> canvas 标签语法和属性</h3>
+<ol>
+<li>可以设置 width 和 height 属性，但是属性值单位必须是 px，否则忽略，默认 300*150px</li>
+<li>不要用 CSS 控制它的宽和高，会造成图片拉伸，</li>
+<li>js 重新设置 canvas 标签的宽高属性会让画布擦除所有的内容。</li>
+<li>可以给 canvas 画布设置背景色</li>
+</ol>
+<h3 id="canvas坐标系"><a class="markdownIt-Anchor" href="#canvas坐标系">#</a> canvas 坐标系</h3>
+<p>canvas 坐标系，从最左上角 0,0 开始。x 向右增大， y 向下增大</p>
+<img data-src="/2022/07/13/C_Javascript/Canvas/canvas-x-y.png" class="" title="canvas坐标系">
+<h2 id="canvas-api"><a class="markdownIt-Anchor" href="#canvas-api">#</a> Canvas API</h2>
+<h3 id="绘图上下文context"><a class="markdownIt-Anchor" href="#绘图上下文context">#</a> 绘图上下文 context</h3>
+<p>上下文：工具包，是所有的绘制操作 api 的入口或者集合</p>
+<ol>
+<li>canvas 自身无法绘制任何内容。Canvas 的绘图是使用 JavaScript 操作的。</li>
+<li>context 对象就是 JavaScript 操作 Canvas 的接口</li>
+<li>使用 getContext (‘2d’) 来获取 2D 绘图上下文。</li>
+</ol>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">var</span> ctx <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 注意：2d 小写， 3d：webgl</span></pre></td></tr></table></figure><h3 id="绘制图形"><a class="markdownIt-Anchor" href="#绘制图形">#</a> 绘制图形</h3>
+<h4 id="属性"><a class="markdownIt-Anchor" href="#属性">#</a> 属性</h4>
+<ul>
+<li>lineWidth     设置线宽</li>
+<li>strokeStyle   设置描边样式（默认黑色）</li>
+<li>fillStyle     设置填充样式（默认黑色）</li>
+</ul>
+<h4 id="方法"><a class="markdownIt-Anchor" href="#方法">#</a> 方法</h4>
+<ul>
+<li>
+<p>moveTo (x,y)   设置绘制路径的起点（移动画笔位置）</p>
+</li>
+<li>
+<p>lineTo (x,y)   画线</p>
+</li>
+<li>
+<p>closePath ()   闭合路径，必须闭合路径才能成功填充</p>
+</li>
+<li>
+<p>beginPath ()   开启一个新状态，基于之前的状态开启新的状态，新的状态会保持之前的设置</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>ctx<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 开启新的状态后，当设置新的值时，只会作用于当前状态，不会影响之前的状态</span></pre></td></tr><tr><td data-num="3"></td><td><pre>ctx<span class="token punctuation">.</span>lindeWidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>ctx<span class="token punctuation">.</span>strokeStyle <span class="token operator">=</span> <span class="token string">'# ddd'</span><span class="token punctuation">;</span></pre></td></tr></table></figure></li>
+<li>
+<p>rect (x,y,width,height) 绘制矩形路径<br>
+ x, y 是矩形左上角坐标， width 和 height 都是以像素计（下同）</p>
+</li>
+</ul>
+<blockquote>
+<p>PS: rect 方法只是规划了矩形的路径，并没有填充和描边</p>
+</blockquote>
+<ul>
+<li>strokeRect (x,y,width,height)  绘制描边矩形</li>
+<li>fillRect (x,y,width,height)    绘制填充矩形</li>
+<li>stroke ()      描边</li>
+<li>fill ()        填充，该方法会自动闭合路径</li>
+<li>clearRect (x,y,width,height)   清除矩形区域，</li>
+</ul>
+<blockquote>
+<p>PS: 重新设置 canvas 的宽 / 高也能达到清空的效果</p>
+</blockquote>
+<ul>
+<li>arc (x,y,radius,startAngle,endAngle,counterclockwise)   画圆弧 / 画圆
+<ul>
+<li>x,y：圆心坐标。</li>
+<li>radius：半径大小。</li>
+<li>startAngle: 绘制开始的角度（x 轴为 0 度）。</li>
+<li>endAngel: 结束的角度，注意是弧度。</li>
+<li>counterclockwise：是否是逆时针。true 是逆时针，false：顺时针</li>
+</ul>
+</li>
+</ul>
+<pre><code>弧度和角度的转换公式： rad = deg*Math.PI/180;
+在Math提供的方法中sin、cos等都使用的弧度 
+</code></pre>
+<p>** 绘图步骤（5 步）：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token number">1</span>、获得画布</pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">var</span> canvas  <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span> <span class="token string">'cavsElem'</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token number">2</span>、获得canvas上下文</pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">var</span> ctx <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span> <span class="token string">'2d'</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> </pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token number">3</span>、绘制路径</pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">// 设置绘制起点（移动画笔位置）</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">moveTo</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">lineTo</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">lineTo</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token number">4</span>、设置样式</pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token comment">// 设置线宽</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    ctx<span class="token punctuation">.</span>lineWidth <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token comment">// 设置描边样式（默认黑色）</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    ctx<span class="token punctuation">.</span>strokeStyle <span class="token operator">=</span> <span class="token string">'red'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token comment">// 设置填充样式（默认黑色）</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    ctx<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token string">'# f60'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token number">5</span>、描边<span class="token operator">/</span>填充</pre></td></tr><tr><td data-num="25"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">stroke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="27"></td><td><pre></pre></td></tr><tr><td data-num="28"></td><td><pre>    <span class="token constant">PS</span><span class="token function">：fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span>方法会自动闭合路径</pre></td></tr></table></figure><h3 id="绘制字体了解"><a class="markdownIt-Anchor" href="#绘制字体了解">#</a> 绘制字体（了解）</h3>
+<h4 id="属性-2"><a class="markdownIt-Anchor" href="#属性-2">#</a> 属性</h4>
+<ul>
+<li>
+<p>font      设置或返回文本内容的当前字体属性，语法与 CSS 相同</p>
+</li>
+<li>
+<p>textAlign 设置或返回文本内容的当前对齐方式</p>
+<ul>
+<li>start（默认）: 文本在指定的位置开始。</li>
+<li>end : 文本在指定的位置结束。</li>
+<li>center: 文本的中心被放置在指定的位置。</li>
+<li>left : 文本左对齐。</li>
+<li>right : 文本右对齐。</li>
+</ul>
+  <img data-src="/2022/07/13/C_Javascript/Canvas/textAsign.png" class="" title="textAlign示意图">
+</li>
+<li>
+<p>textBaseline 设置或返回在绘制文本时使用的当前文本基线</p>
+<ul>
+<li>alphabetic ： 默认。文本基线是普通的字母基线。</li>
+<li>top ： 文本基线是 em 方框的顶端。。</li>
+<li>hanging ： 文本基线是悬挂基线。</li>
+<li>middle ： 文本基线是 em 方框的正中。</li>
+<li>ideographic： 文本基线是 em 基线。</li>
+<li>bottom ： 文本基线是 em 方框的底端</li>
+</ul>
+  <img data-src="/2022/07/13/C_Javascript/Canvas/font-baseline.png" class="" title="textBaseline示意图">
+</li>
+</ul>
+<h4 id="方法-2"><a class="markdownIt-Anchor" href="#方法-2">#</a> 方法</h4>
+<ul>
+<li>fillText (text,x,y)    填充字体</li>
+<li>strokeText (text,x,y)  描边字体
+<ul>
+<li>x,y：绘制文字起始坐标</li>
+</ul>
+</li>
+<li>measureText (text) 检测字体宽度，返回包含指定文本宽度的对象
+<ul>
+<li>text: 文本</li>
+</ul>
+</li>
+</ul>
+<h3 id="绘制图片"><a class="markdownIt-Anchor" href="#绘制图片">#</a> 绘制图片</h3>
+<ul>
+<li>基本绘制图片的方式</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    参数：</pre></td></tr><tr><td data-num="3"></td><td><pre>    x<span class="token punctuation">,</span>y 绘制图片左上角的坐标，</pre></td></tr><tr><td data-num="4"></td><td><pre>    img是绘制图片的dom对象。</pre></td></tr></table></figure><ul>
+<li>在画布上绘制图像，并规定图像的宽度和高度</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span><span class="token punctuation">;</span>   </pre></td></tr><tr><td data-num="2"></td><td><pre>    参数：</pre></td></tr><tr><td data-num="3"></td><td><pre>    width 绘制图片的宽度， </pre></td></tr><tr><td data-num="4"></td><td><pre>    height：绘制图片的高度</pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>    如果指定宽高，最好成比例，不然图片会被拉伸</pre></td></tr><tr><td data-num="7"></td><td><pre>    等比公式： height <span class="token operator">=</span> 原高度<span class="token operator">*</span>width<span class="token operator">/</span>原宽度<span class="token punctuation">;</span></pre></td></tr></table></figure><ul>
+<li>图片裁剪，并把裁剪完成后的那部分图片绘制到画布上</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>ctx<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span>sx<span class="token punctuation">,</span>sy<span class="token punctuation">,</span>swidth<span class="token punctuation">,</span>sheight<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    参数：</pre></td></tr><tr><td data-num="3"></td><td><pre>    sx<span class="token punctuation">,</span>sy 裁剪的左上角坐标，</pre></td></tr><tr><td data-num="4"></td><td><pre>    swidth：裁剪图片的宽度。</pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token literal-property property">sheight</span><span class="token operator">:</span>裁剪的高度</pre></td></tr></table></figure><h3 id="设置阴影了解"><a class="markdownIt-Anchor" href="#设置阴影了解">#</a> 设置阴影（了解）</h3>
+<ul>
+<li>shadowColor ： 设置或返回用于阴影的颜色</li>
+<li>shadowBlur ： 设置或返回用于阴影的模糊级别，数值越高，模糊程度越大 （默认为 0，不模糊）</li>
+<li>shadowOffsetX： 设置或返回阴影距形状的水平距离</li>
+<li>shadowOffsetY： 设置或返回阴影距形状的垂直距离</li>
+</ul>
+<p>示例：</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>ctx<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token string">'# fc0'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    ctx<span class="token punctuation">.</span>shadowColor <span class="token operator">=</span> <span class="token string">'# 333'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    ctx<span class="token punctuation">.</span>shadowBlur <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    ctx<span class="token punctuation">.</span>shadowOffsetX <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    ctx<span class="token punctuation">.</span>shadowOffsetY <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">fillRect</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="创建渐变样式了解"><a class="markdownIt-Anchor" href="#创建渐变样式了解">#</a> 创建渐变样式（了解）</h3>
+<h4 id="线性渐变"><a class="markdownIt-Anchor" href="#线性渐变">#</a> 线性渐变</h4>
+<p>线性渐变是一个对象</p>
+<ul>
+<li>
+<p>语法：ctx.createLinearGradient (x0,y0,x1,y1);<br>
+ 参数：x0,y0 起始坐标，x1,y1 结束坐标</p>
+</li>
+<li>
+<p>addColorStop(stop,color)</p>
+<ul>
+<li>stop：介于 0.0 与 1.0 之间的值，表示渐变中开始与结束之间的位置</li>
+<li>color：颜色值</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 创建线性渐变的对象，</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">var</span> grd<span class="token operator">=</span>ctx<span class="token punctuation">.</span><span class="token function">createLinearGradient</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">170</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 添加一个渐变颜色，</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment">// 参数 1：0.0 与 1.0 之间的值，表示渐变中开始与结束之间的位置。</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token comment">// 参数 2：具体颜色</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    grd<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token string">"black"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment">// 添加一个渐变颜色</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    grd<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"white"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token comment">// 关键点，把渐变设置到 填充的样式</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    ctx<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span>grd<span class="token punctuation">;</span></pre></td></tr></table></figure><h4 id="径向渐变"><a class="markdownIt-Anchor" href="#径向渐变">#</a> 径向渐变</h4>
+<ul>
+<li>ctx.createRadialGradient(x0,y0,r0,x1,y1,r1);
+<ul>
+<li>x0: 渐变的开始圆的 x 坐标</li>
+<li>y0: 渐变的开始圆的 y 坐标</li>
+<li>r0: 开始圆的半径</li>
+<li>x1: 渐变的结束圆的 x 坐标</li>
+<li>y1: 渐变的结束圆的 y 坐标</li>
+<li>r1: 结束圆的半径</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> rlg <span class="token operator">=</span> ctx<span class="token punctuation">.</span><span class="token function">createRadialGradient</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment">// 添加一个渐变颜色</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    rlg<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'# ccc'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    rlg<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">.4</span><span class="token punctuation">,</span> <span class="token string">'# efefef'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    rlg<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'# fff'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">// 设置 填充样式为延续渐变的样式</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    ctx<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> rlg<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">fillRect</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="绘制背景图了解"><a class="markdownIt-Anchor" href="#绘制背景图了解">#</a> 绘制背景图（了解）</h3>
+<p>ctx.createPattern (img,repeat) 方法在指定的方向内重复指定的元素了解</p>
+<ul>
+<li>参数一：设置平铺背景的图片的 DOM 节点，</li>
+<li>参数二：背景平铺的方式。
+<ul>
+<li>image ： 规定要使用的图片、画布或视频元素。</li>
+<li>repeat ： 默认。该模式在水平和垂直方向重复。</li>
+<li>repeat-x ： 该模式只在水平方向重复。</li>
+<li>repeat-y ： 该模式只在垂直方向重复。</li>
+<li>no-repeat： 该模式只显示一次（不重复）。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> ctx<span class="token operator">=</span>c<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">"2d"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">var</span> img<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"lamp"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">var</span> pat<span class="token operator">=</span>ctx<span class="token punctuation">.</span><span class="token function">createPattern</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span><span class="token string">"repeat"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">rect</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">150</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    ctx<span class="token punctuation">.</span>fillStyle<span class="token operator">=</span>pat<span class="token punctuation">;</span><span class="token comment">//  把背景图设置给填充的样式</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    ctx<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="画布变换"><a class="markdownIt-Anchor" href="#画布变换">#</a> 画布变换</h3>
+<blockquote>
+<p>注意：画布变换仅仅是改变画布状态，不会影响之前画布上的内容</p>
+</blockquote>
+<ul>
+<li>
+<p>缩放<br>
+ scale (scaleWidth,scaleHeight) 方法缩放当前绘图，参数为 0~1 的值</p>
+</li>
+<li>
+<p>位移画布<br>
+ translate (x,y) 方法重新映射画布上的 (0,0) 位置</p>
+</li>
+<li>
+<p>旋转<br>
+ rotate (radian) 方法旋转当前的绘图，注意参数是弧度</p>
+</li>
+</ul>
+<h3 id="绘制环境保存和还原"><a class="markdownIt-Anchor" href="#绘制环境保存和还原">#</a> 绘制环境保存和还原</h3>
+<ul>
+<li>
+<p>ctx.save () 保存当前环境的状态<br>
+可以把当前绘制环境 context 保存到缓存中。</p>
+</li>
+<li>
+<p>ctx.restore () 返回之前保存过的路径状态和属性<br>
+获取最近通过 save () 方法缓存的 context</p>
+</li>
+</ul>
+<h3 id="保存base64编码图片"><a class="markdownIt-Anchor" href="#保存base64编码图片">#</a> 保存 base64 编码图片</h3>
+<ul>
+<li>toDataURL(type, encoderOptions);
+<ul>
+<li>type，设置输出的类型，比如 image/png image/jpeg 等</li>
+<li>encoderOptions：0-1 之间的数字，用于标识输出图片的品质</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>PS: 必须在服务器环境下使用</p>
+</blockquote>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"canvas"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">var</span> dataURL <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">var</span> img <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"img"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    img<span class="token punctuation">.</span>src <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token string">"image/png"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 将画布的内容赋值给图片的 src 属性</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">// 下载</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">// 下载后的问题名</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">var</span> filename <span class="token operator">=</span> <span class="token string">'xxx'</span> <span class="token operator">+</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.png'</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token comment">// 创建 a 标签用于下载图片（必须有 download 属性）</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">var</span> save_link <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    save_link<span class="token punctuation">.</span>href <span class="token operator">=</span> dataURL<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    save_link<span class="token punctuation">.</span>download <span class="token operator">=</span> filename<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    </pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token comment">// 自定义事件</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token keyword">var</span> event <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createEvent</span><span class="token punctuation">(</span><span class="token string">'MouseEvents'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    event<span class="token punctuation">.</span><span class="token function">initMouseEvent</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> window<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    save_link<span class="token punctuation">.</span><span class="token function">dispatchEvent</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="贝塞尔曲线了解"><a class="markdownIt-Anchor" href="#贝塞尔曲线了解">#</a> 贝塞尔曲线（了解）</h3>
+<h4 id="二次方曲线"><a class="markdownIt-Anchor" href="#二次方曲线">#</a> 二次方曲线</h4>
+<p>quadraticCurveTo(cpx,cpy,x,y)</p>
+<ul>
+<li>cpx： 贝塞尔控制点的 x 坐标</li>
+<li>cpy： 贝塞尔控制点的 y 坐标</li>
+<li>x ： 结束点的 x 坐标</li>
+<li>y ： 结束点的 y 坐标<img data-src="/2022/07/13/C_Javascript/Canvas/quadratic.png" class="" title="二次方曲线示意图">
+</li>
+</ul>
+<h4 id="贝塞尔曲线"><a class="markdownIt-Anchor" href="#贝塞尔曲线">#</a> 贝塞尔曲线</h4>
+<p>bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y)</p>
+<blockquote>
+<p>提示：三次贝塞尔曲线需要三个点。前两个点是用于三次贝塞尔计算中的控制点，第三个点是曲线的结束点</p>
+</blockquote>
+<ul>
+<li>cp1x： 第一个贝塞尔控制点的 x 坐标</li>
+<li>cp1y： 第一个贝塞尔控制点的 y 坐标</li>
+<li>cp2x： 第二个贝塞尔控制点的 x 坐标</li>
+<li>cp2y： 第二个贝塞尔控制点的 y 坐标</li>
+<li>x: 结束点的 x 坐标</li>
+<li>y: 结束点的 y 坐标<img data-src="/2022/07/13/C_Javascript/Canvas/bezier.png" class="" title="贝塞尔曲线示意图">
+</li>
+</ul>
+<h2 id="canvas应用"><a class="markdownIt-Anchor" href="#canvas应用">#</a> Canvas 应用</h2>
+<ul>
+<li>Echarts</li>
+<li>Highcharts</li>
+</ul>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-23 08:26:00" itemprop="dateModified" datetime="2022-07-23T08:26:00+08:00">2022-07-23</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Duke Shao 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Duke Shao 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Duke Shao 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Duke Shao <i class="ic i-at"><em>@</em></i>你的名字
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://dukeshao.com/2022/07/13/C_Javascript/Canvas/" title="Canvas">https://dukeshao.com/2022/07/13/C_Javascript/Canvas/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/07/13/C_Javascript/WEB%20%E7%BB%84%E4%BB%B6%E6%A0%87%E5%87%86/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;9bd9b167gy1g4lj0xzf5vj21hc0xcqv5.jpg" title="WEB 组件标准">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> C_Javascript</span>
+  <h3>WEB 组件标准</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> canvas 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas%E7%94%A8%E9%80%94"><span class="toc-number">2.</span> <span class="toc-text"> canvas 用途</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95%E5%92%8C%E5%B1%9E%E6%80%A7"><span class="toc-number">2.1.</span> <span class="toc-text"> canvas 标签语法和属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#canvas%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">2.2.</span> <span class="toc-text"> canvas 坐标系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas-api"><span class="toc-number">3.</span> <span class="toc-text"> Canvas API</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%9B%BE%E4%B8%8A%E4%B8%8B%E6%96%87context"><span class="toc-number">3.1.</span> <span class="toc-text"> 绘图上下文 context</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E5%9B%BE%E5%BD%A2"><span class="toc-number">3.2.</span> <span class="toc-text"> 绘制图形</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-number">3.2.1.</span> <span class="toc-text"> 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">3.2.2.</span> <span class="toc-text"> 方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E5%AD%97%E4%BD%93%E4%BA%86%E8%A7%A3"><span class="toc-number">3.3.</span> <span class="toc-text"> 绘制字体（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7-2"><span class="toc-number">3.3.1.</span> <span class="toc-text"> 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-2"><span class="toc-number">3.3.2.</span> <span class="toc-text"> 方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E5%9B%BE%E7%89%87"><span class="toc-number">3.4.</span> <span class="toc-text"> 绘制图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%98%B4%E5%BD%B1%E4%BA%86%E8%A7%A3"><span class="toc-number">3.5.</span> <span class="toc-text"> 设置阴影（了解）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%B8%90%E5%8F%98%E6%A0%B7%E5%BC%8F%E4%BA%86%E8%A7%A3"><span class="toc-number">3.6.</span> <span class="toc-text"> 创建渐变样式（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E6%B8%90%E5%8F%98"><span class="toc-number">3.6.1.</span> <span class="toc-text"> 线性渐变</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%84%E5%90%91%E6%B8%90%E5%8F%98"><span class="toc-number">3.6.2.</span> <span class="toc-text"> 径向渐变</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E8%83%8C%E6%99%AF%E5%9B%BE%E4%BA%86%E8%A7%A3"><span class="toc-number">3.7.</span> <span class="toc-text"> 绘制背景图（了解）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%BB%E5%B8%83%E5%8F%98%E6%8D%A2"><span class="toc-number">3.8.</span> <span class="toc-text"> 画布变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%98%E5%88%B6%E7%8E%AF%E5%A2%83%E4%BF%9D%E5%AD%98%E5%92%8C%E8%BF%98%E5%8E%9F"><span class="toc-number">3.9.</span> <span class="toc-text"> 绘制环境保存和还原</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98base64%E7%BC%96%E7%A0%81%E5%9B%BE%E7%89%87"><span class="toc-number">3.10.</span> <span class="toc-text"> 保存 base64 编码图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF%E4%BA%86%E8%A7%A3"><span class="toc-number">3.11.</span> <span class="toc-text"> 贝塞尔曲线（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E6%AC%A1%E6%96%B9%E6%9B%B2%E7%BA%BF"><span class="toc-number">3.11.1.</span> <span class="toc-text"> 二次方曲线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF"><span class="toc-number">3.11.2.</span> <span class="toc-text"> 贝塞尔曲线</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#canvas%E5%BA%94%E7%94%A8"><span class="toc-number">4.</span> <span class="toc-text"> Canvas 应用</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2022/07/13/C_Javascript/Ajax/" rel="bookmark" title="Ajax">Ajax</a></li><li><a href="/2022/07/13/C_Javascript/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF/" rel="bookmark" title="面向对象与继承">面向对象与继承</a></li><li><a href="/2022/07/13/C_Javascript/Javascript%E8%BF%9B%E9%98%B6/" rel="bookmark" title="Javascript进阶">Javascript进阶</a></li><li><a href="/2022/07/13/C_Javascript/cookie_%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8_%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="bookmark" title="cookie_本地存储_设计模式">cookie_本地存储_设计模式</a></li><li><a href="/2022/07/13/C_Javascript/ES6_10/" rel="bookmark" title="ES6-10">ES6-10</a></li><li><a href="/2022/07/13/C_Javascript/IndexedDB/" rel="bookmark" title="IndexedDB">IndexedDB</a></li><li><a href="/2022/07/13/C_Javascript/WEB%20%E7%BB%84%E4%BB%B6%E6%A0%87%E5%87%86/" rel="bookmark" title="WEB 组件标准">WEB 组件标准</a></li><li class="active"><a href="/2022/07/13/C_Javascript/Canvas/" rel="bookmark" title="Canvas">Canvas</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Duke Shao"
+      data-src="/images/head.png">
+  <p class="name" itemprop="name">Duke Shao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">11</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Duke Shao @ 你的名字</span>
+  </div>
+
+  <div class="copyright">
+    &copy; <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8=">粤ICP备19055048号</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">100k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:31</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/07/13/C_Javascript/Canvas/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

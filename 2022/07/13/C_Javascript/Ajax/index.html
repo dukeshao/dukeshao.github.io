@@ -1,0 +1,583 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="你的名字" href="https://dukeshao.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="你的名字" href="https://dukeshao.com/atom.xml" />
+<link rel="alternate" type="application/json" title="你的名字" href="https://dukeshao.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="https://dukeshao.com/2022/07/13/C_Javascript/Ajax/">
+
+
+
+  <title>
+Ajax - C_Javascript |
+你的名字 = 持续学习那些不变的底层知识</title>
+<meta name="generator" content="Hexo 5.4.2"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Ajax
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-07-13 06:59:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-07-13T06:59:00+08:00">2022-07-13</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">你的名字</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://tva1.sinaimg.cn/large/9bd9b167gy1g2qm740ia2j21hc0u0hdt.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/C-Javascript/" itemprop="item" rel="index" title="分类于 C_Javascript"><span itemprop="name">C_Javascript</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://dukeshao.com/2022/07/13/C_Javascript/Ajax/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/head.png">
+    <meta itemprop="name" content="Duke Shao">
+    <meta itemprop="description" content="持续学习那些不变的底层知识, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="你的名字">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="一-概念"><a class="markdownIt-Anchor" href="#一-概念">#</a> 一、概念</h2>
+<pre><code>1.AJAX
+	Asynchronous Javascript And Xml，Ajax 技术的核心是XMLHttpRequest对象（简称XHR），这是由微软首先引入的一个特性，其他浏览器提供商后来都提供了相同的实现
+
+2.起源
+	最早出现在2005年的google搜索建议
+3.优点
+	* 增加速度：减轻服务器的负担,按需加载数据,最大程度的减少冗余请求
+	* 改善的用户体验：局部刷新页面,减少用户等待时间,带来更好的用户体验
+	* 页面和数据分离：前后端分离，操作更灵活，后期维护更方便
+4.后端语言和服务器配置
+	* php + Apache + mySQL
+	* NodeJS + MongoDB
+	* Java + tomcat + Oracle
+	* .NET + IIS + SQL Server
+</code></pre>
+<h2 id="二-json"><a class="markdownIt-Anchor" href="#二-json">#</a> 二、json</h2>
+<h3 id="1json数据json字符串"><a class="markdownIt-Anchor" href="#1json数据json字符串">#</a> 1.json 数据 (json 字符串)</h3>
+<figure class="highlight json"><figcaption data-lang="JSON"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">&#123;</span><span class="token property">"id"</span> <span class="token operator">:</span> <span class="token number">21465461461461</span><span class="token punctuation">,</span> <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"张三"</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">&#123;</span><span class="token property">"id"</span> <span class="token operator">:</span> <span class="token number">21465461461461</span><span class="token punctuation">,</span> <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"张三"</span><span class="token punctuation">&#125;</span><span class="token punctuation">]</span></pre></td></tr></table></figure><h3 id="2json字符串与对象的转换"><a class="markdownIt-Anchor" href="#2json字符串与对象的转换">#</a> 2.json 字符串与对象的转换</h3>
+<pre><code>1.json字符串转成对象的转换
+(1)eval(&quot;(&quot;+json字符串+&quot;)&quot;); 
+	它的作用是，将一个普通的json格式(不标准的json字符串)的字符串，转换成Json格式的对象
+	var list = eval(&quot;(&quot;+request.responseText+&quot;)&quot;);
+(2)JSON.parse(); //把JSON字符串转成JSON对象(js对象/数组)【es5】
+2.把JSON对象转成JSON字符串
+	JSON.stringify(); 
+</code></pre>
+<h3 id="3json文件存在的意义"><a class="markdownIt-Anchor" href="#3json文件存在的意义">#</a> 3.json 文件存在的意义</h3>
+<figure class="highlight json"><figcaption data-lang="JSON"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">// 模拟数据 (与后端先商量)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">[</span></pre></td></tr><tr><td data-num="3"></td><td><pre>	<span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>		<span class="token property">"id"</span><span class="token operator">:</span><span class="token string">"G001"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>		<span class="token property">"name"</span><span class="token operator">:</span><span class="token string">"Thermos 膳魔师 Funtainer系列水杯 12盎司（340g） 粉红色"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="6"></td><td><pre>		<span class="token property">"imgurl"</span><span class="token operator">:</span><span class="token string">"images/g1.jpg"</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>		<span class="token property">"price"</span><span class="token operator">:</span><span class="token number">899</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><h2 id="三-ajax请求步骤"><a class="markdownIt-Anchor" href="#三-ajax请求步骤">#</a> 三、Ajax 请求步骤</h2>
+<p>1. 创建请求对象</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">var</span> xhr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 返回一个异步请求对象</span></pre></td></tr></table></figure><p>2. 处理服务器返回数据</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>        <span class="token comment">//responseText：保存服务器返回的数据（从服务器返回的数据是 “字符串”）。</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token function">alert</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>3. 设置请求参数，建立与服务器的连接</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"get"</span><span class="token punctuation">,</span> <span class="token string">"http://localhost/api/ajaxtest"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p>4. 向服务器发送请求</p>
+<figure class="highlight js"><figcaption data-lang="JavaScript"></figcaption><table><tr><td data-num="1"></td><td><pre>xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="四-xmlhttprequest"><a class="markdownIt-Anchor" href="#四-xmlhttprequest">#</a> 四、XMLHttpRequest</h2>
+<h3 id="1opentypeurlasync"><a class="markdownIt-Anchor" href="#1opentypeurlasync">#</a> 1.open(type,url,async)</h3>
+<p>open (type,url（同源策略）,async（同步、异步）)</p>
+<pre><code>1.open(type,url,async): 建立与服务器的连接
+    type：请求的类型，get获取、post发送
+    	* 区别? 
+    		get请求数据接在url后面，post请求数据通过send方法传递
+    		get传递的数据会比较少，post没有限制
+    		get传递的数据会暴露出来
+    url：数据请求的地址（API地址），一般由后端开发人员提供
+    	* 相对路径的情况下，必须在同一个根目录(端口配置的目录)下。
+        * 当前页面访问地址，API地址两者一定要同域
+        * 同域（同源策略）：协议，域名，端口三者一致
+        * 报错： No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
+	async：是否异步发送请求（true,false），默认为true
+        * 同步：按步骤顺序执行，前面的代码执行完后，后面的代码才会执行
+        	做完前一件事情, 才能下一件事情（排队）
+        * 异步：与其他操作同时执行，也叫并发（图片加载，ajax请求，定时器）
+</code></pre>
+<h3 id="2senddata"><a class="markdownIt-Anchor" href="#2senddata">#</a> 2.send(data)</h3>
+<pre><code>2.send(data): 向服务器发送请求
+	data：可选参数，post请求时才生效，表示发请求时传送的数据字符串。
+    	 xhr.send('size=20&amp;type=music');
+		在某些浏览器中，如果不需要通过post请求主体发送数据，则必须传入null
+//备注：get请求的数据写在url地址后
+	request.open(&quot;get&quot;, &quot;http://localhost/api/getdata.php?type=get&amp;qty=10&quot;, true);
+	setRequestHeader(key,val)：设置请求头
+//备注：利用请求头设置POST提交数据格式(form表单)：
+	xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');//open方法后设置
+</code></pre>
+<p>在请求收到服务器的响应后，响应的数据会自动填充 xhr 对象的属性，相关的属性简介如下</p>
+<h3 id="3readystate"><a class="markdownIt-Anchor" href="#3readystate">#</a> 3.readyState</h3>
+<pre><code>0 － （未初始化）尚未调用open()方法。
+1 － （启动）已经调用open()方法，但尚未调用send()方法。
+2 － （发送）send()方法执行完成，但尚未接收到响应。
+3 － （接收）已经接收到部分响应数据。
+4 － （完成）响应内容解析完成，可以在客户端调用了
+只要readyState 属性的值由一个值变成另一个值，都会触发一次readystatechange 事件。必须在调用open()之前指定onreadystatechange事件处理程序才能确保跨浏览器兼容性。
+</code></pre>
+<h3 id="4responsetext"><a class="markdownIt-Anchor" href="#4responsetext">#</a> 4.responseText</h3>
+<p>保存服务器返回的数据（从服务器返回的数据是 “字符串”）。</p>
+<h3 id="5status"><a class="markdownIt-Anchor" href="#5status">#</a> 5.status</h3>
+<pre><code>* 响应的HTTP 状态。
+200（OK）：服务器成功返回了页面
+304（Not Modified）：数据与服务器相同，不需要重服务器请求（直接使用缓存的数据）
+400（Bad Request）：语法错误导致服务器不识别
+401（Unauthorized）：请求需要用户认证
+404（Not found）：请求地址不存在
+500（Internal Server Error）：服务器出错或无响应
+503（ServiceUnavailable）：由于服务器过载或维护导致无法完
+</code></pre>
+<h2 id="五-跨域解决方案"><a class="markdownIt-Anchor" href="#五-跨域解决方案">#</a> 五、跨域解决方案</h2>
+<h3 id="1jsonp"><a class="markdownIt-Anchor" href="#1jsonp">#</a> 1.JSONP</h3>
+<p>原理：利用 script 标签能加载其他域名的 js 文件的原理，实现跨域数据请求</p>
+<figure class="highlight json"><figcaption data-lang="JSON"></figcaption><table><tr><td data-num="1"></td><td><pre>* JSONP 是JSON with padding（填充式JSON 或参数式JSON）的简写。</pre></td></tr><tr><td data-num="2"></td><td><pre>* JSONP是一种可以绕过浏览器的安全限制，从不同的域请求数据的方法。</pre></td></tr><tr><td data-num="3"></td><td><pre>* JSONP请求不是ajax请求，是利用script标签能加载其他域名的js文件的原理，来实现跨域数据的请求 </pre></td></tr><tr><td data-num="4"></td><td><pre>* 局限性：</pre></td></tr><tr><td data-num="5"></td><td><pre>  - 只能为get请求</pre></td></tr><tr><td data-num="6"></td><td><pre>  - 接口必须有回调函数的执行</pre></td></tr></table></figure><p>案例练习 1：使用 script 标签其他 js 文件调用本地 js 的某个函数；</p>
+<p>案例练习 2：使用 script 标签其他 php 文件调用本地 js 的未知名方法，返回数据</p>
+<p>案例练习 3：利用 JSONP 原理调用百度建议</p>
+<pre><code>msg.oninput = function()&#123;
+    let _msg = msg.value;
+    clearTimeout(timer);
+    timer = setTimeout(()=&gt;&#123;
+    let script = document.createElement('script');
+    script.src='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/sujson=1&amp;cb=getData&amp;wd='+_msg;
+    document.body.appendChild(script);
+    &#125;,500);
+&#125;
+window.getData = function(data)&#123;
+    suggest.innerHTML = data.s.map(item=&gt;&#123;
+        return `&lt;li&gt;$&#123;item&#125;&lt;/li&gt;`
+        &#125;).join(&quot;&quot;);
+    &#125;
+&#125;)
+//原理性代码：
+//1.script的src中回调函数的传递
+script.src='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/sujson=1&amp;cb=getData&amp;wd='+_msg;
+//2.声明全局函数
+window.getData = function(data)&#123;处理数据&#125;
+</code></pre>
+<h3 id="2cors"><a class="markdownIt-Anchor" href="#2cors">#</a> 2.CORS</h3>
+<p>原理：在后端响应头添加词字段 header (‘Access-Control-Allow-Origin: *’)</p>
+<pre><code>CORS是一个W3C标准，全称是”跨域资源共享”（Cross-origin resource sharing），它允许浏览器向跨源服务器发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
+
+CORS需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能，IE浏览器不能低于IE10。服务器需要设置响应头，允许该域名访问
+</code></pre>
+<pre><code>1.Access-Control-Allow-Origin
+	header('Access-Control-Allow-Origin: *');  
+该字段是必须的。需要在后端响应头添加词字段，值要么是一个*，表示接受任意域名的请求，要么指定一个域名http://localhost。
+2.Access-Control-Allow-Methods
+3.Access-Control-Allow-Headers
+    header('Access-Control-Allow-Methods:POST');  
+    header('Access-Control-Allow-Headers:x-requested-with,content-type'); 
+</code></pre>
+<p>案例 1：天气预报</p>
+<p>案例 2：百度地图</p>
+<h3 id="3服务器代理"><a class="markdownIt-Anchor" href="#3服务器代理">#</a> 3. 服务器代理</h3>
+<p>原理：file_get_contents ($url) // 获取网站内容</p>
+<p>后端不存在跨域问题，所以可以利用后端间接获取其他网站的数据</p>
+<pre><code>ajax跨域请求之服务端代理（爬虫）
+原理：获取页面所有内容，并利用正则匹配所需内容
+file_get_contents($url) //获取网站内容
+preg_match_all($reg,$str,$res) 
+preg_match($reg,$str,$res)   //$str代表被匹配的内容，$res为结果
+$content = iconv(原字符编码,新字符编码,$content);//修改$content字符编码
+</code></pre>
+<p>案例 1：利用服务器代理获取外网 IP</p>
+<p>案例 2：根据 IP 获取所在城市（ajax 嵌套）</p>
+<p>案例 3：根据城市获取天气预报（ajax 嵌套）</p>
+<p>案例 4：POST 请求数据</p>
+<h2 id="六-异步处理方法promise"><a class="markdownIt-Anchor" href="#六-异步处理方法promise">#</a> 六、异步处理方法 Promise</h2>
+<h3 id="1promise"><a class="markdownIt-Anchor" href="#1promise">#</a> 1.Promise</h3>
+<p>Promise 是一个构造函数，所谓的 Promise 对象，就是通过 new Promise () 实例化得到的对象，用来传递异步操作的数据。它代表了某个未来才会知道结果的事件（通常是一个异步操作），并且这个事件提供统一的 API，可供进一步处理。</p>
+<p>1. 创建对象</p>
+<pre><code>var p=new Promise(function(resolve,reject)&#123;
+    //成功拿到数据执行resolve,失败执行reject
+&#125;)
+	*规定好了哪个阶段执行哪个函数
+Promise的三种状态
+    * Pending(未完成)可以理解为Promise对象实例new创建时候的初始状态
+    * Resolved(成功)可以理解成功的状态
+    * Rejected(失败)可以理解为失败的状态
+</code></pre>
+<p>2. 执行方法</p>
+<pre><code>p.then(成功时要执行的代码).catch(失败时执行的代码)
+</code></pre>
+<p>3. 静态方法</p>
+<p>Promise.all([p1,p2,p3,p4])</p>
+<p>将多个 Promise 实例，包装成一个新的 Promise 实例</p>
+<p>所有参数中的 Promise 状态都为 resolved 时，新的 promise 状态才为 resolved</p>
+<p>只要 p1,p2,p3… 之中有一个被 rejected, 新的 promise 的状态就变成 rejected</p>
+<pre><code>Promise.all([p1,p2,p3]).then(function(res)&#123;
+	console.log(res);
+&#125;)
+</code></pre>
+<p>Promise.race ([p1,p2,p3…]) 竞速，完成一个即可</p>
+<h3 id="2trycatch"><a class="markdownIt-Anchor" href="#2trycatch">#</a> 2.try…catch</h3>
+<p>尝试执行代码，如果有错误则执行 catch 捕获错误 (不报错)</p>
+<pre><code>try&#123;
+	console.log(666)
+	//先尝试执行这里的代码
+	show();
+	//无报错，则忽略catch
+	//如果报错，则执行catch，并传递错误信息
+&#125;catch(error)&#123;
+	console.log(error)
+&#125;
+console.log('end');
+</code></pre>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-07-23 08:04:37" itemprop="dateModified" datetime="2022-07-23T08:04:37+08:00">2022-07-23</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Duke Shao 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Duke Shao 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Duke Shao 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Duke Shao <i class="ic i-at"><em>@</em></i>你的名字
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://dukeshao.com/2022/07/13/C_Javascript/Ajax/" title="Ajax">https://dukeshao.com/2022/07/13/C_Javascript/Ajax/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/07/13/C_Javascript/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;large&#x2F;9bd9b167gy1g2qkccv8d8j21hc0u0qoh.jpg" title="面向对象与继承">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> C_Javascript</span>
+  <h3>面向对象与继承</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2022/07/13/A_HTML/HTML/" itemprop="url" rel="next" data-background-image="&#x2F;2022&#x2F;07&#x2F;13&#x2F;A_HTML&#x2F;HTML&#x2F;cover.jpg" title="HTML">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> A_HTML</span>
+  <h3>HTML</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text"> 一、概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-json"><span class="toc-number">2.</span> <span class="toc-text"> 二、json</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1json%E6%95%B0%E6%8D%AEjson%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.1.</span> <span class="toc-text"> 1.json 数据 (json 字符串)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2json%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.2.</span> <span class="toc-text"> 2.json 字符串与对象的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3json%E6%96%87%E4%BB%B6%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-number">2.3.</span> <span class="toc-text"> 3.json 文件存在的意义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-ajax%E8%AF%B7%E6%B1%82%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.</span> <span class="toc-text"> 三、Ajax 请求步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-xmlhttprequest"><span class="toc-number">4.</span> <span class="toc-text"> 四、XMLHttpRequest</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1opentypeurlasync"><span class="toc-number">4.1.</span> <span class="toc-text"> 1.open(type,url,async)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2senddata"><span class="toc-number">4.2.</span> <span class="toc-text"> 2.send(data)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3readystate"><span class="toc-number">4.3.</span> <span class="toc-text"> 3.readyState</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4responsetext"><span class="toc-number">4.4.</span> <span class="toc-text"> 4.responseText</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5status"><span class="toc-number">4.5.</span> <span class="toc-text"> 5.status</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E8%B7%A8%E5%9F%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">5.</span> <span class="toc-text"> 五、跨域解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1jsonp"><span class="toc-number">5.1.</span> <span class="toc-text"> 1.JSONP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2cors"><span class="toc-number">5.2.</span> <span class="toc-text"> 2.CORS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%A3%E7%90%86"><span class="toc-number">5.3.</span> <span class="toc-text"> 3. 服务器代理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95promise"><span class="toc-number">6.</span> <span class="toc-text"> 六、异步处理方法 Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1promise"><span class="toc-number">6.1.</span> <span class="toc-text"> 1.Promise</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2trycatch"><span class="toc-number">6.2.</span> <span class="toc-text"> 2.try…catch</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2022/07/13/C_Javascript/Ajax/" rel="bookmark" title="Ajax">Ajax</a></li><li><a href="/2022/07/13/C_Javascript/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF/" rel="bookmark" title="面向对象与继承">面向对象与继承</a></li><li><a href="/2022/07/13/C_Javascript/Javascript%E8%BF%9B%E9%98%B6/" rel="bookmark" title="Javascript进阶">Javascript进阶</a></li><li><a href="/2022/07/13/C_Javascript/cookie_%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8_%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="bookmark" title="cookie_本地存储_设计模式">cookie_本地存储_设计模式</a></li><li><a href="/2022/07/13/C_Javascript/ES6_10/" rel="bookmark" title="ES6-10">ES6-10</a></li><li><a href="/2022/07/13/C_Javascript/IndexedDB/" rel="bookmark" title="IndexedDB">IndexedDB</a></li><li><a href="/2022/07/13/C_Javascript/WEB%20%E7%BB%84%E4%BB%B6%E6%A0%87%E5%87%86/" rel="bookmark" title="WEB 组件标准">WEB 组件标准</a></li><li><a href="/2022/07/13/C_Javascript/Canvas/" rel="bookmark" title="Canvas">Canvas</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Duke Shao"
+      data-src="/images/head.png">
+  <p class="name" itemprop="name">Duke Shao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">11</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">4</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2022/07/13/C_Javascript/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E7%BB%A7%E6%89%BF/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2022/07/13/A_HTML/HTML/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Duke Shao @ 你的名字</span>
+  </div>
+
+  <div class="copyright">
+    &copy; <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8=">粤ICP备19055048号</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">100k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:31</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/07/13/C_Javascript/Ajax/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
